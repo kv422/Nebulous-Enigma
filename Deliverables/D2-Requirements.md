@@ -165,7 +165,7 @@ Mock up ~ coming soon...
 1. Provide error information to user.
 2. send user back to login screen.
 
-TODO: add mockup
+![Use case 4 mockup image of title screen](/deliverable_images/Title_Mockup.jpeg)
 
 # 7. User stories
 
