@@ -145,6 +145,28 @@ Consumer segment: Nebulous Enigma welcomes? Is for? Any type and all levels of g
 
 Mock up ~ coming soon...
 
+### *Use case 4: User log in*
+**Success scinario:**
+1. User inputs username and password.
+2. User clicks login button.
+3. System checks database for matching password and username.
+4. User is logged into account.
+
+**Alternate Scenarios:**
+*3.a Username not found*
+1. System gives user error.
+2. Send user back to login screen.
+
+*3.b Password does not match*
+1. System gives user error
+2. Send user back to login screen.
+
+*3.c Database unreachable*
+1. Provide error information to user.
+2. send user back to login screen.
+
+TODO: add mockup
+
 # 7. User stories
 
 1. As a player, I want to customize my character so that my playthroughs feel unique. (Priority: 12 (or some other low number), Estimation: (planning poker required))
@@ -155,5 +177,9 @@ Mock up ~ coming soon...
 6. As a gamer, I want to be able to resolve a topic I posted, so that others can find the solution, I too was looking for. 
 7. As a player, I want to be able to go back the story, so I can reread content (Priority: 4, Estimation: (pending))
 8. As a player, I want to be able to play without logging in, so I can get a fresh start (Priority: 3, Estimation: (pending))
+9. placeholder
+10. placeholder
+11. As a player I would like to see the percentage of players that hit endings so that I can have more sense of community. (priority 13 (3 days))
+12. As a player I would like to have sound or music to improve my immersion. (priority 15 (2 days))
 
 # 8. Issue Tracker
