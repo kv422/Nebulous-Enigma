@@ -110,7 +110,7 @@ Consumer segment: Nebulous Enigma welcomes? Is for? Any type and all levels of g
 *4a. The system is unable to access the next story node.*
 1. The system notifies the player of the error and asks them to try again later.
 
-![Use Case 2](https://i.ibb.co/TvC6jmQ/image-2024-09-27-142247730.png)
+![Use Case 2](https://i.ibb.co/bNXpJ4P/image-2024-09-28-161025084.png)
 
 ### *Use Case 4: User creates/resolves discussion post*
 **Actor:** user/gamer\
@@ -146,29 +146,6 @@ Consumer segment: Nebulous Enigma welcomes? Is for? Any type and all levels of g
 4. The system notifies the user of the resolved comment
 
 Mock up ~ coming soon...
-
-### *Use case 4: User log in*
-**Success scinario:**
-1. User inputs username and password.
-2. User clicks login button.
-3. System checks database for matching password and username.
-4. User is logged into account.
-
-**Alternate Scenarios:**
-*3.a Username not found*
-1. System gives user error.
-2. Send user back to login screen.
-
-*3.b Password does not match*
-1. System gives user error
-2. Send user back to login screen.
-
-*3.c Database unreachable*
-1. Provide error information to user.
-2. send user back to login screen.
-
-**Page mockup:**
-![Use case 4 mockup image of title screen](deliverable_images/Title_Mockup.jpg)
 
 # 7. User stories
 
