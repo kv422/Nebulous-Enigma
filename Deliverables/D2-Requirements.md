@@ -48,6 +48,8 @@ Consumer segment: Nebulous Enigma welcomes? Is for? Any type and all levels of g
 
 ### 6.1 Use case diagram
 
+![Use case diagram](Nebulous-Enigma-Use-cases.png)
+
 ### 6.2 Use case descriptions and interface sketch
 
 ### *Use Case 1: Make a story choice*
