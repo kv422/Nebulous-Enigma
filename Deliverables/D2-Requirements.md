@@ -165,6 +165,7 @@ Mock up ~ coming soon...
 1. Provide error information to user.
 2. send user back to login screen.
 
+**Page mockup:**
 ![Use case 4 mockup image of title screen](deliverable_images/Title_Mockup.jpg)
 
 # 7. User stories
@@ -179,7 +180,7 @@ Mock up ~ coming soon...
 8. As a player, I want to be able to play without logging in, so I can get a fresh start (Priority: 3, Estimation: (pending))
 9. placeholder
 10. placeholder
-11. As a player I would like to see the percentage of players that hit endings so that I can have more sense of community. (priority 13 (3 days))
-12. As a player I would like to have sound or music to improve my immersion. (priority 15 (2 days))
+11. As a player I would like to see the percentage of players that hit endings so that I can have more sense of community. (priority 7 (3 days))
+12. As a player I would like to have sound or music to improve my immersion. (priority 8 (2 days))
 
 # 8. Issue Tracker
