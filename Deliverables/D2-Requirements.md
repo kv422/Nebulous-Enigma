@@ -147,28 +147,35 @@ Consumer segment: Nebulous Enigma welcomes? Is for? Any type and all levels of g
 
 Mock up ~ coming soon...
 
-### *Use case 4: User log in*
-**Success scinario:**
-1. User inputs username and password.
-2. User clicks login button.
-3. System checks database for matching password and username.
-4. User is logged into account.
+### *Use case 5: edit player avatar*
+**Actor:** Player\
+**Trigger:** The player clicks avatar to change their avatar.\
+**Pre-conditions:** The User must have a profile in order to have an avatar.\
+**Post-condition:** The users avatar is saved and displayed properly.\
+
+**Success scenario:**
+1. The user logs into their profile.
+2. The user clicks their profile.
+3. User clicks edit profile.
+4. User changes profile picture
+5. User saves changes.
+6. System saves and loads new picture.
 
 **Alternate Scenarios:**
-*3.a Username not found*
-1. System gives user error.
-2. Send user back to login screen.
 
-*3.b Password does not match*
-1. System gives user error
-2. Send user back to login screen.
+*1.a User does not have login*
+1. User is sent back to login page with error message.
 
-*3.c Database unreachable*
-1. Provide error information to user.
-2. send user back to login screen.
+*5.a User does not save changes*
+1. Server does not save changes.
+2. Old profile picture kept.
+
+*6.a System does not save changes*
+1. System error does not save user changes.
+2. Error message displayed to user.
 
 **Page mockup:**
-![Use case 4 mockup image of title screen](deliverable_images/Title_Mockup.jpg)
+![Use case 5 mockup image of title screen](deliverable_images/edit_player_avatar_mockup.png)
 
 # 7. User stories
 
