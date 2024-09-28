@@ -110,7 +110,7 @@ Consumer segment: Nebulous Enigma welcomes? Is for? Any type and all levels of g
 
 ![Use Case 2](https://i.ibb.co/TvC6jmQ/image-2024-09-27-142247730.png)
 
-### *Use Case 3: Load progress*
+### *Use Case 4: User creates/resolves discussion post*
 **Actor:** user/gamer\
 **Trigger:** The user navigates to the discussion page.\
 **Pre-conditions:** The user must have a profile before creating a post.\
