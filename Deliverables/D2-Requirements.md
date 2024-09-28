@@ -30,8 +30,8 @@ Consumer segment: Nebulous Enigma welcomes? Is for? Any type and all levels of g
 7. Profile page - customization
 8. Customizable options - light/dark mode
 9. Content library? Lore page, characters discovered
-10. Achievements?
-11. Feedback page?
+10. Achievements
+11. Feedback page
 12. Discussion page? Similar to Reddit/help/lore discussion
 13. edit/delete posts/replies
 
@@ -180,8 +180,8 @@ Mock up ~ coming soon...
 
 1. As a player, I want to customize my character so that my playthroughs feel unique. (Priority: 12 (or some other low number), Estimation: (planning poker required))
 2. As a player, I want to return to previous choices I've made so that I can experience other paths of the story. (Priority: 3, Estimation: (planning poker required))
-3. As a player, I want to read a story, so that I am entertained (Priority 2, Estimation: (planning poker required))
-4. As a player, I want to read multiple endings, so that I can learn more about the game's world (Priority 2, Estimation: (planning poker required))
+3. As a player, I want to read a story, so that I am entertained (Priority 2, Estimation: 2 weeks)
+4. As a player, I want to read multiple endings, so that I can learn more about the game's world (Priority 2, Estimation: 6 days)
 5. As a new gamer, I want to be able to post my questions about the game, so that I can understand how to navigate this game. (Priority 10, Estimation: 4 weeks)
 6. As a gamer, I want to be able to resolve a topic I posted, so that others can find the solution, I too was looking for. (Priority 10, Estimation: 1 day)
 7. As a player, I want to be able to go back to the story, so I can reread content (Priority: 4, Estimation: (pending))
