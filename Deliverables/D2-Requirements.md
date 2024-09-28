@@ -11,15 +11,30 @@ The problem of poorly-designed story games affects gamers; the impact of which i
 
 ### 1.2 Product Position Statement
 
+Value proposition: Nebulous Enigma allows gamers to combat boredom while prioritizing entertainment, creating adventure games, and relaxation by avoiding overwhelming video games.  [Prev: For entertainment, solving boredom, and allowing users to take a break from overwhelming video games.]
+
 ### 1.3 Value proposition and customer segment
+
+Consumer segment: Nebulous Enigma welcomes? Is for? Any type and all levels of gamers. [Prev: Visual novel fans and gamers.]
 
 # 2. Stakeholders
 
 # 3. Functional requirements (features)
 
-1. The player can select different paths to progress the story in different ways.
+1. The player can select different paths to progress the story differently.
 2. If the player is logged into an account, their progress is saved as they play to a database server.
 3. The game must have multiple endings.
+4. Progress saves
+5. progress page
+6. Easy to navigate website
+7. Profile page - customization
+8. Customizable options - light/dark mode
+9. Content library? Lore page, characters discovered
+10. Achievements?
+11. Feedback page?
+12. Discussion page? Similar to Reddit/help/lore discussion
+13. edit/delete posts/replies
+
 
 # 4. Non-functional requirements
 
@@ -95,11 +110,49 @@ The problem of poorly-designed story games affects gamers; the impact of which i
 
 ![Use Case 2](https://i.ibb.co/TvC6jmQ/image-2024-09-27-142247730.png)
 
+### *Use Case 3: Load progress*
+**Actor:** user/gamer\
+**Trigger:** The user navigates to the discussion page.\
+**Pre-conditions:** The user must have a profile before creating a post.\
+**Post-condition:**  successfully post/resolved discussion. 
+
+**Success Scenario:**
+
+1. User logs in
+2. User navigates to the discussion page
+3. User writes discussion topic
+4. User uploads/resolves discussion
+5. System adds discussion post to discussion page/disables further commenting
+6. Discussion visible to other users 
+
+
+**Alternate Scenario #1:**
+
+1. The system does not have user information (needs to sign in)
+2. System notifies user
+3. The system guides the user to in-page
+
+**Alternate Scenario #2:**
+1. User writes post 
+2. System adds posts to the discussion page
+3. System notifies successful upload 
+
+**Alternate Scenario #3:**
+1. User navigates to the discussion page
+2. User resolves discussion
+3. System disables further commenting
+4. The system notifies the user of the resolved comment
+
+Mock up ~ coming soon...
+
 # 7. User stories
 
 1. As a player, I want to customize my character so that my playthroughs feel unique. (Priority: 12 (or some other low number), Estimation: (planning poker required))
 2. As a player, I want to return to previous choices I've made so that I can experience other paths of the story. (Priority: 3, Estimation: (planning poker required))
 3. As a player, I want to read a story, so that I am entertained (Priority 2, Estimation: (planning poker required))
 4. As a player, I want to read multiple endings, so that I can learn more about the game's world (Priority 2, Estimation: (planning poker required))
+5. As a new gamer, I want to be able to post my questions about the game, so that I can understand how to navigate this game.
+As a gamer, I want to be able to resolve a topic I posted, so that others can find the solution, I too was looking for. 
+
 
 # 8. Issue Tracker
