@@ -33,6 +33,8 @@ The problem of poorly-designed story games affects gamers; the impact of which i
 
 ### 6.1 Use case diagram
 
+![Use case diagram](Nebulous-Enigma-Use-cases.png)
+
 ### 6.2 Use case descriptions and interface sketch
 
 ### *Use Case 1: Make a story choice*
