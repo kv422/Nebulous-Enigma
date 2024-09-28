@@ -152,7 +152,7 @@ Mock up ~ coming soon...
 3. As a player, I want to read a story, so that I am entertained (Priority 2, Estimation: (planning poker required))
 4. As a player, I want to read multiple endings, so that I can learn more about the game's world (Priority 2, Estimation: (planning poker required))
 5. As a new gamer, I want to be able to post my questions about the game, so that I can understand how to navigate this game.
-As a gamer, I want to be able to resolve a topic I posted, so that others can find the solution, I too was looking for. 
+6. As a gamer, I want to be able to resolve a topic I posted, so that others can find the solution, I too was looking for. 
 
 
 # 8. Issue Tracker
