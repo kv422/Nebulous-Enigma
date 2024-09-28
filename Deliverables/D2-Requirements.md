@@ -110,7 +110,7 @@ Consumer segment: Nebulous Enigma welcomes? Is for? Any type and all levels of g
 *4a. The system is unable to access the next story node.*
 1. The system notifies the player of the error and asks them to try again later.
 
-![Use Case 2](https://i.ibb.co/TvC6jmQ/image-2024-09-27-142247730.png)
+![Use Case 2](https://i.ibb.co/bNXpJ4P/image-2024-09-28-161025084.png)
 
 ### *Use Case 4: User creates/resolves discussion post*
 **Actor:** user/gamer\
@@ -174,7 +174,6 @@ Mock up ~ coming soon...
 1. System error does not save user changes.
 2. Error message displayed to user.
 
-**Page mockup:**
 ![Use case 5 mockup image of title screen](deliverable_images/edit_player_avatar_mockup.png)
 
 # 7. User stories
