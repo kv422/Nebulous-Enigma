@@ -153,6 +153,7 @@ Mock up ~ coming soon...
 4. As a player, I want to read multiple endings, so that I can learn more about the game's world (Priority 2, Estimation: (planning poker required))
 5. As a new gamer, I want to be able to post my questions about the game, so that I can understand how to navigate this game.
 6. As a gamer, I want to be able to resolve a topic I posted, so that others can find the solution, I too was looking for. 
-
+7. As a player, I want to be able to go back the story, so I can reread content (Priority: 4, Estimation: (pending))
+8. As a player, I want to be able to play without logging in, so I can get a fresh start (Priority: 3, Estimation: (pending))
 
 # 8. Issue Tracker
