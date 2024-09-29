@@ -32,7 +32,6 @@ Consumer segment: All levels of gamers and visual novel fans who are interested 
 7. The game must be able to run in a web browser.
 8. The game is played with a mouse or touch input on a touchscreen.
 
-
 # 4. Non-functional requirements
 
 1. Time Behavior - Going from one page to another page must take less than 500ms. 
@@ -43,10 +42,12 @@ Consumer segment: All levels of gamers and visual novel fans who are interested 
 6. User Engagement - At least 4 out of 5 players are satisfied with the achievements they can collect through playing the game.
 7. User Engagement - At least 3 out of 5 players submit feedback using the website's feedback page.
 8. User Engagement - At least 4 out of 5 players are satisfied with using the discussion page to ask, answer, and see questions related to the game.
-9. Inclusivity - At least 4 out of 5 colorblind players are satisfied with the colorblind settings available.
-10. Interoperability - The player can play on the same account and have their progress saved across different devices and browsers.
-11. Reusability - At least 9 out of 10 story pages follow the same basic template where the text, background, and choices can be easily edited.
-12. Faultlessness - Players experience less than 1 error per hour while playing.
+9. User Engagement - At least 4 out of 5 players are satisfied with the soundtrack and sound effects.
+10. User Engagement - At least 4 out of 5 players are satisfied with the story flow chart page.
+11. Inclusivity - At least 4 out of 5 colorblind players are satisfied with the colorblind settings available.
+12. Interoperability - The player can play on the same account and have their progress saved across different devices and browsers.
+13. Reusability - At least 9 out of 10 story pages follow the same basic template where the text, background, and choices can be easily edited.
+14. Faultlessness - Players experience less than 1 error per hour while playing.
 
 # 5. MVP
 
@@ -190,8 +191,8 @@ Mock up ~ coming soon...
 6. As a player, I want resolved posts to be marked as such, so that it is easier to find answers. (Priority: 10, Estimation: 1 day)
 7. As a player, I want to be able to go back to the previous page, so that I don't miss details. (Priority: 4, Estimation: 4 hours)
 8. As a player, I want to play without logging in, so that I don't have to make an account. (Priority: 3, Estimation: 1 hour)
-9. placeholder
-10. placeholder
+9. As a science fiction fan, I want a story and visuals that support the fantasy of science fiction, so that I feel immersed. (Priority: 3, Estimation: 6 weeks)
+10. As a colorblind person, I want a colorblind mode, so that the game is more accessible to me. (Priority: 12, Estimation: 5 Days)
 11. As a player, I want to see the percentage of players that get each ending, so that I feel more of a sense of community. (Priority: 7, Estimation: 3 days)
 12. As a player, I want to hear sound effects and music, so that I feel more immersed. (Priority: 8, Estimation: 2 days)
 
