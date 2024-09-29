@@ -107,6 +107,29 @@ Consumer segment: All levels of gamers and visual novel fans who are interested 
 
 ![Use Case 2](https://i.ibb.co/bNXpJ4P/image-2024-09-28-161025084.png)
 
+### *Use Case 3: Signup*
+**Actor:** Player\
+**Trigger:** The player wants to create an account to save their progress.\
+**Pre-conditions:** The player is at the landing page.\
+**Post-condition:** The system displays signup success and redirects to the login page. 
+
+**Success Scenario:**
+
+1. The player selects the signup button.
+2. The system redirects the player to the signup page.
+3. The player enters a username and password.
+4. The system verifies that the users credentials do not already exist.
+5. The system reports success to the player.
+6. The system redirects the player to the login page.
+
+**Alternate Scenarios:**
+
+*4a. The player entered credentials that already exist.*
+1. The system tells the player that the entered credentials already exist, and then prompts them to retry.
+2. Once the user enters valid credentials, the system continues as normal.
+
+![Use Case 2](https://i.ibb.co/YRqpBZB/Screenshot-2024-09-28-at-9-57-49-PM.png)
+
 ### *Use Case 4: Create discussion post*
 **Actor:** Player\
 **Trigger:** The player wants to create a post in the discussion.\
