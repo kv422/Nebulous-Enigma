@@ -176,6 +176,33 @@ Mock up ~ coming soon...
 
 ![Use case 5 mockup image of title screen](deliverable_images/edit_player_avatar_mockup.png)
 
+### *Use Case 6: Signing in as a guest*
+**Actor:** Player\
+**Trigger:** The player wants to play without an account.\
+**Pre-conditions:** The player is at the main menu.\
+**Post-condition:** The player progresses to the start of the story.
+
+**Success Scenario:**
+
+1. The system presents with the main menu for the player to choose how to play.
+2. The player selects the guest option.
+3. The system logs the user into the guest account.
+4. The system displays the first story page. 
+
+**Alternate Scenarios:**
+
+*1a. The player is not at the main menu.*
+1. The system displays a logout button.
+
+*3a. The system is unable to log user into guest.*
+1. The system notifies the player that they are unable to log in.
+2. The system requests the player to try again.
+
+*4a. The system is unable to access the story.*
+1. The system notifies the player of the error and asks them to try again later.
+
+![Use case 6 mockup image of login screen](https://ibb.co/wpnr5Q5)
+
 # 7. User stories
 
 1. As a player, I want to customize my character so that my playthroughs feel unique. (Priority: 12 (or some other low number), Estimation: (planning poker required))
