@@ -204,3 +204,5 @@ For the minimum viable product of our website, it will focus on three main pages
 12. As a player, I want to hear sound effects and music, so that I feel more immersed. (Priority: 8, Estimation: 2 days)
 
 # 8. Issue Tracker
+https://github.com/clw549/Nebulous-Enigma/issues
+![Issue Tracker Image](https://i.ibb.co/GVJ7kdj/image-2024-09-28-215325994.png)
