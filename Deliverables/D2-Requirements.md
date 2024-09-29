@@ -34,6 +34,9 @@ Consumer segment: Nebulous Enigma welcomes? Is for? Any type and all levels of g
 11. Feedback page
 12. Discussion page? Similar to Reddit/help/lore discussion
 13. edit/delete posts/replies
+14. Colorblind Mode(s)
+15. Music/Sound effects
+16. Choice tree visual.  Like a map of the users choices so they can reflect on what they have done.
 
 
 # 4. Non-functional requirements
@@ -41,6 +44,8 @@ Consumer segment: Nebulous Enigma welcomes? Is for? Any type and all levels of g
 1. Going from one page to another page must be almost instantaneous
 2. The game must be able to run in a web browser
 3. The game must use a database of some kind to save a user's progress
+4. Some kind of password encryption
+5. The make a choice->navigate to the next page needs to be scalable to add more choices/different stories in the future.
 
 # 5. MVP
 
@@ -213,8 +218,8 @@ Mock up ~ coming soon...
 6. As a gamer, I want to be able to resolve a topic I posted, so that others can find the solution, I too was looking for. (Priority 10, Estimation: 1 day)
 7. As a player, I want to be able to go back to the story, so I can reread content (Priority: 4, Estimation: (pending))
 8. As a player, I want to be able to play without logging in, so I can get a fresh start (Priority: 3, Estimation: (pending))
-9. placeholder
-10. placeholder
+9. As a science fiction fan, I want a story and visuals that support the fantasy of science fiction, so that I can be immersed. (Priority 3, Estimation: 6 weeks)
+10. As a colorblind person, I want a colorblind mode so the game is more accessible to me. (Priority: 12, Estimation: 5 Days)
 11. As a player I would like to see the percentage of players that hit endings so that I can have more sense of community. (priority 7 (3 days))
 12. As a player I would like to have sound or music to improve my immersion. (priority 8 (2 days))
 
