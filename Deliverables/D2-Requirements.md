@@ -20,6 +20,12 @@ Value proposition: Nebulous Enigma is a "choose your own adventure" game that al
 Consumer segment: All levels of gamers and visual novel fans who are interested in sci-fi
 
 # 2. Stakeholders
+1. Gamers: Any level of gamers who interact/engage with our website. They can read about different game lore, track progress, and contribute to the continuation of the website through feedback.
+2. Competitors: Alternative gaming/create your adventure game websites that attract our target audience.
+3. Detractors: Individuals who rate, and provide feedback for our website. Provide insight on improvements, and detail issues related to the functionality of the website.
+4. Developers: The team designing, building, and maintaining the website. Creating an intuitive and functional website, that keeps the audience engaged in our website.
+5. Open Source Resources: (Example: AWS, etc.) Online tools that provide free services. It offers access to different tools that are crucial for the development of our website. 
+
 
 # 3. Functional requirements (features)
 
@@ -50,6 +56,7 @@ Consumer segment: All levels of gamers and visual novel fans who are interested 
 14. Faultlessness - Players experience less than 1 error per hour while playing.
 
 # 5. MVP
+For the minimum viable product of our website, it will focus on three main pages: the title page and the start and end page of the website. Our title page is the login page that users first see when they visit the website. Additionally, it will include two text boxes for username and password, as well as three buttons that specify submit credentials, sign up, or continue as a guest, without logging in. Input from these fields will be securely stored in a database, except for the continue as guest option. Both the start and end pages will have similar features such as a taskbar that houses the log-out and home page buttons. The start page will have a text box that showcases dialog or a passage, as well as options participants can choose from. For the end page, it will have two options: to log out or restart the game. To validate our website we plan to create test accounts to log into and navigate through the different features of our website,  ensuring that the login system, page navigation, and game options function as intended. These three pages act as the main foundation of our website. 
 
 # 6. Use cases
 
@@ -132,7 +139,7 @@ Consumer segment: All levels of gamers and visual novel fans who are interested 
 *5b. The system is unable to create a new post.*
 1. The system notifies the player of the error and asks them to try again later.
 
-Mock up ~ coming soon...
+![Use Case 4](deliverable_images/d2_usecase4.png)
 
 ### *Use case 5: Customize avatar*
 **Actor:** Player\
