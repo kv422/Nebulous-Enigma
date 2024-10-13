@@ -14,4 +14,4 @@ The problem of non-linear story games with **choices** that don't actually matte
 
 # 2. Model
 
-![system's UML class diagram](https://i.imgur.com/xi6ocuc.png)
+![system's UML class diagram](https://i.ibb.co/jhDf8vR/Nebulous-UML.png)
