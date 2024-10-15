@@ -23,8 +23,8 @@ app.use(cors(corsOptions))
 mongoose.connect(process.env.DB_URI);
 
 app.post('/signup', (req, res) => {
-  const { email, password } = req.body;
-  PlayerModel.findOne({ email: email })
+  const { username, password } = req.body;
+  PlayerModel.findOne({ username: username })
     .then(user => {
       if(user) {
         res.json("Account already exists")
@@ -38,8 +38,8 @@ app.post('/signup', (req, res) => {
 })
 
 app.post('/login', (req, res) => {
-  const { email, password } = req.body;
-  PlayerModel.findOne({ email: email })
+  const { username, password } = req.body;
+  PlayerModel.findOne({ username: username })
     .then(user => {
       if(user) {
         if(user.password === password) {

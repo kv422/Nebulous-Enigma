@@ -6,22 +6,22 @@ import AuthContext from '../../context/AuthProvider'
 function LogIn() {
 
   const { setAuth } = useContext(AuthContext)
-  const [email, setEmail] = useState()
+  const [username, setUsername] = useState()
   const [password, setPassword] = useState()
   const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    axios.post('/login', { email, password }, { withCredentials: true })
+    axios.post('/login', { username, password }, { withCredentials: true })
       .then(result => {
         console.log(result)
 
         if (result.data === 'Success') {
           const accessToken = result?.data?.accessToken
 
-          setAuth({ email, password, accessToken })
-          setEmail('')
+          setAuth({ username, password, accessToken })
+          setusername('')
           setPassword('')
 
           navigate('/home')
@@ -39,11 +39,11 @@ function LogIn() {
         <form onSubmit={ handleSubmit }>
           <div className="mb-3">
             <input
-              type='email'
-              placeholder='email'
-              name='email'
+              type='username'
+              placeholder='username'
+              name='username'
               className='form-control rounded-0'
-              onChange={ (e) => setEmail(e.target.value) }
+              onChange={ (e) => setusername(e.target.value) }
             />
           </div>
           <div className="mb-3">
@@ -61,6 +61,10 @@ function LogIn() {
 
       <p> Don't have an account? </p>
       <Link to='/signup' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'> Sign Up </Link>
+
+      <p> or </p>
+
+      <Link to='/game' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'> Play as a guest </Link>
     </div>
   </div>
 

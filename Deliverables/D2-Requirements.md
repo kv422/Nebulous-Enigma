@@ -99,7 +99,7 @@ For the minimum viable product of our website, it will focus on three main pages
 **Success Scenario:**
 
 1. The system presents an option to load a save.
-2. The player enters their email and password.
+2. The player enters their username and password.
 3. The system redirects the player to the point in the game where they last saved.
 
 **Alternate Scenarios:**

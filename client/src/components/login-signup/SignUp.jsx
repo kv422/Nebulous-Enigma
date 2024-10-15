@@ -5,13 +5,13 @@ import { useNavigate, Link } from 'react-router-dom'
 function SignUp() {
 
   const [name, setName] = useState()
-  const [email, setEmail] = useState()
+  const [username, setUsername] = useState()
   const [password, setPassword] = useState()
   const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.post('/signup', { name, email, password })
+    axios.post('/signup', { name, username, password })
       .then(result => {
         console.log(result)
       })
@@ -28,7 +28,7 @@ function SignUp() {
           <div className="mb-3">
             <input
               type='text'
-              placeholder='name'
+              placeholder='character name'
               autoComplete='off'
               name='name'
               className='form-control rounded-0'
@@ -37,11 +37,11 @@ function SignUp() {
           </div>
           <div className="mb-3">
             <input
-              type='email'
-              placeholder='email'
-              name='email'
+              type='text'
+              placeholder='username'
+              name='username'
               className='form-control rounded-0'
-              onChange={ (e) => setEmail(e.target.value) }
+              onChange={ (e) => setUsername(e.target.value) }
             />
           </div>
           <div className="mb-3">
@@ -58,7 +58,7 @@ function SignUp() {
       </form>
 
       <p> Already have an account? </p>
-      <Link to='/login' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'> Log In </Link>
+      <Link to='/' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'> Log In </Link>
     </div>
   </div>
 
