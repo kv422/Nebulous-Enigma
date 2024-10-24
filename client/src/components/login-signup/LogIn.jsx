@@ -13,7 +13,7 @@ function LogIn() {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    axios.post('/login', { username, password }, { withCredentials: true })
+    axios.post('/', { username, password }, { withCredentials: true })
       .then(result => {
         console.log(result)
 
@@ -21,7 +21,7 @@ function LogIn() {
           const accessToken = result?.data?.accessToken
 
           setAuth({ username, password, accessToken })
-          setusername('')
+          setUsername('')
           setPassword('')
 
           navigate('/home')
@@ -43,7 +43,7 @@ function LogIn() {
               placeholder='username'
               name='username'
               className='form-control rounded-0'
-              onChange={ (e) => setusername(e.target.value) }
+              onChange={ (e) => setUsername(e.target.value) }
             />
           </div>
           <div className="mb-3">
