@@ -13,7 +13,7 @@ function LogIn() {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    axios.post('/login', { username, password }, { withCredentials: true })
+    axios.post('/', { username, password }, { withCredentials: true })
       .then(result => {
         console.log(result)
 

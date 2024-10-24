@@ -37,7 +37,7 @@ app.post('/signup', (req, res) => {
     })
 })
 
-app.post('/login', (req, res) => {
+app.post('/', (req, res) => {
   const { username, password } = req.body;
   PlayerModel.findOne({ username: username })
     .then(user => {
