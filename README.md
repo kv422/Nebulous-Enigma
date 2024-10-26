@@ -53,7 +53,9 @@ Give an example
 
 ## Deployment
 
-TEMP: Add additional notes about how to deploy this on a live system
+Link: [Nebulous Enigma](https://nebulousenigma.com/)
+
+We are running our website on a raspberry pi 5, using NodeJS with Nodemon and React with Vite.  We are using a CloudFlare tunnel to route traffic from our domain (nebulousenigma.com) to the Vite server running at the pi's localhost.  The CloudFlare tunnel also routes requests from the Vite server from the subdomain (api.nebulousenigma.com) to the Node server running at the pi's localhost.
 
 ## Built With
 
