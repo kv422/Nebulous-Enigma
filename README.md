@@ -58,9 +58,9 @@ TEMP: Add additional notes about how to deploy this on a live system
 ## Built With
 
 * [MongoDB](https://www.mongodb.com/) - The database used
-* [Express] (https://expressjs.com/) - Node.js web framework
-* [React] (https://react.dev/) - a client-side JavaScript framework
-* [Node] (https://nodejs.org/en) - the premier JavaScript web server
+* [Express](https://expressjs.com/) - Node.js web framework
+* [React](https://react.dev/) - a client-side JavaScript framework
+* [Node](https://nodejs.org/en) - the premier JavaScript web server
 
 ## Contributing
 
