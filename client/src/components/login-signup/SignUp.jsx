@@ -1,21 +1,35 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import axios from '../../api/axios'
 import { useNavigate, Link } from 'react-router-dom'
 
 function SignUp() {
 
-  const [name, setName] = useState()
-  const [username, setUsername] = useState()
-  const [password, setPassword] = useState()
+  const [name, setName] = useState('')
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
+  const [confirmPassword, setConfirmPassword] = useState('')
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate()
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
+    // prevents default browser behavior of reloading after submitting
     e.preventDefault()
-    axios.post('/signup', { name, username, password })
-      .then(result => {
-        console.log(result)
-      })
-      .catch(err => console.log(err))
+    setLoading(true)
+
+    try {
+      // send post request to /signup
+      await axios.post('/signup', { name, username, password, confirmPassword })
+
+      console.log('Successfully signed up!')
+
+      setLoading(false)
+      // takes user to log in page
+      navigate('/')
+
+    } catch (err) {
+      setLoading(false)
+      console.log(err.response.data)
+    }
   }
 
   return (
@@ -27,30 +41,44 @@ function SignUp() {
         <form onSubmit={ handleSubmit }>
           <div className="mb-3">
             <input
-              type='text'
+              value={ name }
+              type='name'
               placeholder='character name'
               autoComplete='off'
               name='name'
               className='form-control rounded-0'
-              onChange={ (e) => setName(e.target.value) }
+              onChange={ (e) => setName(e.target.value.replace(/\s/g, '')) }
             />
           </div>
           <div className="mb-3">
             <input
-              type='text'
+              value={ username }
+              type='name'
               placeholder='username'
+              autoComplete='off'
               name='username'
               className='form-control rounded-0'
-              onChange={ (e) => setUsername(e.target.value) }
+              onChange={ (e) => setUsername(e.target.value.replace(/\s/g, '')) }
             />
           </div>
           <div className="mb-3">
             <input
+              value={ password }
               type='password'
               placeholder='password'
               name='password'
               className='form-control rounded-0'
-              onChange={ (e) => setPassword(e.target.value) }
+              onChange={ (e) => setPassword(e.target.value.replace(/\s/g, '')) }
+            />
+          </div>
+          <div className="mb-3">
+            <input
+              value={ confirmPassword }
+              type='password'
+              placeholder='confirm password'
+              name='confirmPassword'
+              className='form-control rounded-0'
+              onChange={ (e) => setConfirmPassword(e.target.value.replace(/\s/g, '')) }
             />
           </div>
 

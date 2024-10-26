@@ -1,33 +1,53 @@
 import { useContext, useState } from 'react'
 import axios from '../../api/axios'
 import { useNavigate, Link } from 'react-router-dom'
-import AuthContext from '../../context/AuthProvider'
+import UserContext from '../../context/UserContext'
 
 function LogIn() {
 
-  const { setAuth } = useContext(AuthContext)
-  const [username, setUsername] = useState()
-  const [password, setPassword] = useState()
+  const { setUserData } = useContext(UserContext)
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
+  const [user, setUser] = useState(null); // Define state for the user
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate()
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
+    // prevents default browser behavior of reloading after submitting
     e.preventDefault()
+    setLoading(true)
 
-    axios.post('/', { username, password }, { withCredentials: true })
-      .then(result => {
-        console.log(result)
+    try {
+      // send post request to / (login page)
+      const loginRes = await axios.post('/', { username, password })
 
-        if (result.data === 'Success') {
-          const accessToken = result?.data?.accessToken
-
-          setAuth({ username, password, accessToken })
-          setUsername('')
-          setPassword('')
-
-          navigate('/home')
-        }
+      // stores token and user data (with hashed password) to userData hook from
+      // the UserContext file
+      setUserData({
+        token: loginRes.data.token,
+        user: loginRes.data.user,
       })
-      .catch(err => console.log(err))
+
+      // stores token in local storage to persist
+      localStorage.setItem('auth-token', loginRes.data.token)
+
+      // ////////////////////////////// save/load code
+      // // set the state of the user
+      // setUser(result?.data)
+      // // store the user in localStorage
+      // result.testing = 1;
+      // localStorage.setItem('user', JSON.stringify(result.testing)); // Ensure it's stringified
+      // console.log(result.testing);
+      // ////////////////////////////// save/load end
+
+      setLoading(false)
+      // takes user to game home page
+      navigate('/home')
+
+    } catch (err) {
+      setLoading(false)
+      console.log(err.response.data)
+    }
   }
 
   return (
@@ -39,20 +59,22 @@ function LogIn() {
         <form onSubmit={ handleSubmit }>
           <div className="mb-3">
             <input
+              value={ username }
               type='username'
               placeholder='username'
               name='username'
               className='form-control rounded-0'
-              onChange={ (e) => setUsername(e.target.value) }
+              onChange={ (e) => setUsername(e.target.value.replace(/\s/g, '')) }
             />
           </div>
           <div className="mb-3">
             <input
+              value={ password }
               type='password'
               placeholder='password'
               name='password'
               className='form-control rounded-0'
-              onChange={ (e) => setPassword(e.target.value) }
+              onChange={ (e) => setPassword(e.target.value.replace(/\s/g, '')) }
             />
           </div>
 
