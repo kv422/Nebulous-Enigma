@@ -37,11 +37,13 @@ TEMP: Explain how to run the automated tests for this system
 
 ### Break down into end to end tests
 
-TEMP: Explain what these tests test and why
+On the root directory, type the folloing command to do the automated testing:
 
 ```
-Give an example
+npm run test
 ```
+This will run all of the tests specified in the activity.test.js file. 
+Currently, the test that runs checks if the website exists and can be interacted with by the user.
 
 ### And coding style tests
 
