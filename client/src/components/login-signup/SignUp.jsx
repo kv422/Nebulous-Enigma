@@ -9,12 +9,14 @@ function SignUp() {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(''); // State for error message
   const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
     // prevents default browser behavior of reloading after submitting
     e.preventDefault()
     setLoading(true)
+    setError('')
 
     try {
       // send post request to /signup
@@ -27,8 +29,13 @@ function SignUp() {
       navigate('/')
 
     } catch (err) {
-      setLoading(false)
       console.log(err.response.data)
+      if (err.response.status === 400) {
+        setError(err.response.data)
+      } else {
+        setError("Unexpected Error")
+      }
+      setLoading(false)
     }
   }
 
@@ -88,6 +95,7 @@ function SignUp() {
 
       <p className='center'> Already have an account? </p>
       <Link to='/' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'> Log In </Link>
+      {error && <div className="alert alert-danger">{error}</div>} 
     </div>
   </div>
   </div>

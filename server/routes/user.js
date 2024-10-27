@@ -69,13 +69,13 @@ userRouter.post('/', async (req, res) => {
     if (!user) {
       return res
         .status(400)
-        .json('Account with this username does not exist')
+        .json('Username or password is incorrect.')
     }
     // checks if password does not match
     if ( !(await bcryptjs.compare(password, user.password)) ) {
       return res
         .status(400)
-        .json('Password is incorrect')
+        .json('Username or password is incorrect.')
     }
 
     // create token for login to persist

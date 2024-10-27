@@ -12,11 +12,13 @@ function LogIn() {
   const [user, setUser] = useState(null); // Define state for the user
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate()
+  const [error, setError] = useState(''); // State for error message
 
   const handleSubmit = async (e) => {
     // prevents default browser behavior of reloading after submitting
     e.preventDefault()
     setLoading(true)
+    setError('')
 
     try {
       // send post request to / (login page)
@@ -46,8 +48,13 @@ function LogIn() {
       navigate('/home')
 
     } catch (err) {
-      setLoading(false)
       console.log(err.response.data)
+      if (err.response.status === 400) {
+        setError(err.response.data)
+      } else {
+        setError("Unexpected Error")
+      }
+      setLoading(false)
     }
   }
 
@@ -89,6 +96,7 @@ function LogIn() {
       <p className='centerLo'> or </p>
 
       <Link to='/game' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'> Play as a guest </Link>
+      {error && <div className="alert alert-danger">{error}</div>} 
     </div>
     </div>
   </div>
