@@ -44,6 +44,9 @@ userRouter.post('/signup', async (req, res) => {
       // create() is shorthand for calling new() + save()
     UserModel.create({ name, username, password: hashedPassword })
 
+    // Sending a success code so the await axios.post in SignUp.jsx completes
+    res.status(201).json('Successfully created user')
+
   } catch (err) { // in case of error
     res
       .status(500)
