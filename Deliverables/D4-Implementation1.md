@@ -32,6 +32,18 @@ Approved by: Collin Boyer
 
 Print screen: !!!!!!!!!!!!!!!!!!!!!!!!!!!!! add later
 
+### Requirement: As a science fiction fan, I want a story and visuals that support the fantasy of science fiction, so that I can be immersed.
+
+Issue: [#39](https://github.com/clw549/Nebulous-Enigma/issues/39)
+
+Pull request: ...(to be added)
+
+Implemented by: Kayden Vicenti
+
+Approved by: ...
+
+Print screen: ...(add later)
+
 # 3. Tests
 
 # 4. Adopted technologies
