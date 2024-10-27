@@ -3,6 +3,7 @@ import axios from '../../api/axios'
 import { useNavigate, Link } from 'react-router-dom'
 import UserContext from '../../context/UserContext'
 
+
 function LogIn() {
 
   const { setUserData } = useContext(UserContext)
@@ -51,7 +52,8 @@ function LogIn() {
   }
 
   return (
-    <div className='d-flex justify-content-center align-items-center bg-secondary vh-100'>
+    <div className='loginBG'>
+    <div className='d-flex justify-content-center align-items-center vh-100'>
       <title> Log In </title>
       <div className='bg-white p-3 rounded w-25'>
         <h2> Log In </h2>
@@ -78,15 +80,16 @@ function LogIn() {
             />
           </div>
 
-          <button type='submit' className='btn btn-success w-100 rounded-0'> Log In </button>
+          <button type='submit' className='button w-100'> Log In </button>
       </form>
 
-      <p> Don't have an account? </p>
+      <p className='centerLo'> Don't have an account? </p>
       <Link to='/signup' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'> Sign Up </Link>
 
-      <p> or </p>
+      <p className='centerLo'> or </p>
 
       <Link to='/game' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'> Play as a guest </Link>
+    </div>
     </div>
   </div>
 
