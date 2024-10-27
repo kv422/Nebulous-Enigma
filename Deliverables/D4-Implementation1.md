@@ -37,13 +37,14 @@ Print screen:
 
 Issue: [#39](https://github.com/clw549/Nebulous-Enigma/issues/39)
 
-Pull request: ...(to be added)
+Pull request: [https://github.com/clw549/Nebulous-Enigma/pull/77](https://github.com/clw549/Nebulous-Enigma/pull/77)
 
 Implemented by: Kayden Vicenti
 
-Approved by: ...
+Approved by: Ciaran Wham
 
-Print screen: ...(add later)
+Print screen: 
+![Visual update image](./deliverable_images/NebulousEnigma-Immersive.png)
 
 # 3. Tests
 
