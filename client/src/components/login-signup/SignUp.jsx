@@ -33,10 +33,11 @@ function SignUp() {
   }
 
   return (
-    <div className='d-flex justify-content-center align-items-center bg-secondary vh-100'>
+    <div className='signBG'>
+    <div className='d-flex justify-content-center align-items-center vh-100'>
       <title> Sign Up </title>
       <div className='bg-white p-3 rounded w-25'>
-        <h2> Sign Up </h2>
+        <h2 > Sign Up </h2>
 
         <form onSubmit={ handleSubmit }>
           <div className="mb-3">
@@ -82,12 +83,13 @@ function SignUp() {
             />
           </div>
 
-          <button type='submit' className='btn btn-success w-100 rounded-0'> Sign Up </button>
+          <button type='submit' className='button btn-success w-100 rounded-0'> Sign Up </button>
       </form>
 
-      <p> Already have an account? </p>
+      <p className='center'> Already have an account? </p>
       <Link to='/' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'> Log In </Link>
     </div>
+  </div>
   </div>
 
   );
