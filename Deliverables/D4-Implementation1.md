@@ -56,6 +56,10 @@ Additionally, we have helped each other with finding tutorials for anything some
 
 # 6. Deployment
 
+Link to Website: [Nebulous Enigma](https://nebulousenigma.com)
+
+We are hosting our website on a raspberry pi 5.  We are using NodeJS with Nodemon and React with Vite.  We use a CloudFlare tunnel to route traffic from our domain(nebulousenigma.com) to our Vite server running at the raspberry pis localhost.  The tunnel also routes requests from the Vite server sent to api.nebulousengima.com to the Node server running on the pis localhost.  We chose this method of hosting the site because it is lightweight and is less of a hassel then a AWS container.
+
 # 7. Licensing (Kayden Vicenti)
 Our project is based on collaboration and allows for the use of open software. Because of this, we chose to utilize the MIT Open Source Licensing. 
 Click ([here](https://github.com/clw549/Nebulous-Enigma/blob/7117f94cacca9c5091fc314250d04e9d6af98472/LICENSE.md)) to view the license. 
