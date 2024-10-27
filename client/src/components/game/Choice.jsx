@@ -2,7 +2,7 @@ import React from 'react'
 
 function Choice({ handleClick, text }) {
   return (
-    <button onClick={ handleClick } className='btn btn-default border w-100 bg-light rounded-0'>
+    <button onClick={ handleClick } className='button-33'>
       { text }
     </button>
   )
