@@ -44,7 +44,9 @@ Additionally, we have helped each other with finding tutorials for anything some
 
 # 6. Deployment
 
-# 7. Licensing
+# 7. Licensing (Kayden Vicenti)
+Our project is based on collaboration and allows for the use of open software. Because of this, we chose to utilize the MIT Open Source Licensing. 
+Click ([here](https://github.com/clw549/Nebulous-Enigma/blob/7117f94cacca9c5091fc314250d04e9d6af98472/LICENSE.md)) to view the license. 
 
 # 8. README File
 
