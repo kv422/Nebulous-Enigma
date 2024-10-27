@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+
+.aldrich-regular {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.loginBG {
+    background-color: #FFFFFF; /* For browsers that do not support gradients */
+    background-image: radial-gradient(closest-side, transparent, #000000),url(./images/jwt_img.png);
+    animation: fadeIn 5s;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.signBG {
+    background-color: #FFFFFF; /* For browsers that do not support gradients */
+    background-image: radial-gradient(closest-side, transparent, #000000),url(./images/jwt_img.png);
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.homeBG {
+    background-color: #FFFFFF; /* For browsers that do not support gradients */
+    background-image: radial-gradient(closest-side, transparent, #000000),url(./images/jwt_green.jpg);
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.gameBG {
+    background-color: #FFFFFF; /* For browsers that do not support gradients */
+    background-image: radial-gradient(closest-side, transparent, #000000),url(./images/ear_img.jpg);
+    background-position: center;
+    color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 25px;
+
+}
+
+.story {
+    text-align: center;
+    padding: 20px;
+}
+
+.choice {
+    text-align: center;
+}
+
+
+.userName {
+    font-size: 50px;
+    padding: 5%;
+    color: white;
+    text-shadow: 0 0 10px white
+}
+
+
+  .center {
+    text-align: center;
+    padding-top: 3%;
+  }
+
+  .centerLo {
+    text-align: center;
+    margin: 2%;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+  .button {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+
+  .button:hover:before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #1f374f;
+  }
+
+  .button:hover {
+    color: lightcyan;
+    box-shadow: 0 0 10px#1f374f;
+    text-shadow: 0 0 10px #1f374f;
+    background-color: #1f374f;
+    border:#1f374f;
+  }
+
+
+/* CSS */
+.button-33 {
+    color: #FFFFFF;
+    background-color: #1f374f;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    cursor: pointer;
+    display: inline;
+    padding: 7px 20px;
+    margin: 10%;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto, auto, auto;
+    padding: 10px;
+  }
+
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+.button-33:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05);
+}
