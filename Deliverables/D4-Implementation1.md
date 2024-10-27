@@ -72,6 +72,7 @@ Click ([here](https://github.com/clw549/Nebulous-Enigma/blob/7117f94cacca9c5091f
 # 8. README File
 
 # 9. Look & feel
+We used SCSS and images to make Nebulous Enigma more immersive. By using images and layering other affects over it, we have made Nebulous Enigma more immersive and stylized to a sci-fi feel. This can help our players feel more part of the story, and help the player see what they are doing in this world. 
 
 # 10. Lessons learned
 Through working on Nebulous Enigma, we have learned that working as a team both provides ease and its own challenges. While many hands make easy work, desicsions can be a little harder as getting the whole group to the same page can be challenging. Getting to being on the same page may be hard, but once that is done, it is easy from there. Understanding what we are doing indevidually has made working together as a whole much easier. If everyone working on the same thing we would confuse eachother, but when we split the work it gets done hastily. Additionally getting work done early so that others have time to understand and work on aswell has been a large help. Overall getting to the same page and getting things done early are the largest lessons Nebulous Enigma has taught us.
