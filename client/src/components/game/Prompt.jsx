@@ -22,11 +22,11 @@ function Prompt({ currentID, choiceClicked }) {
 
 
   return (
-    <div>
-      <div>
+    <div className='gameBG'>
+      <div  className='story'>
         <p> { story[currentID].text } </p>
       </div>
-      <div>
+      <div className='choice'>
         { story[currentID].choice.map((choice) => {
           return (
             // goes to a choice which is an index, here "choice.goTo" goes to the button that was clicked goto index

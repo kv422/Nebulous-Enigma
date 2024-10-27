@@ -21,12 +21,24 @@ function Home() {
   }
 
   return (
-    <div>
+    <div className='homeBG'>
       <title> Home </title>
-      <p>Hello, { username }</p>
-      <Link to='/game' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'> PLAY </Link>
-      <button onClickCapture={ handleLogOut } className='btn btn-success w-100 rounded-0'> LOG OUT </button>
-    </div>
+      <div className='grid-container'>
+      <div className='grid-item'>
+      <p className='userName'>Hello, { username }</p>
+      </div>
+      <div className='grid-item'>
+      <div className='buttonOrg'>
+      <Link to='/game' className='button-33'> PLAY </Link>
+      </div>
+      </div>
+      <div className='grid-item'>
+      <div className='buttonOrg'>
+      <button onClickCapture={ handleLogOut } className='button-33'> LOG OUT </button>
+      </div>
+      </div>
+</div>
+      </div>
   )
 }
 
