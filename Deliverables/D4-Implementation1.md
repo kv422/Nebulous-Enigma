@@ -30,7 +30,8 @@ Implemented by: Levi Ly
 
 Approved by: Collin Boyer
 
-Print screen: !!!!!!!!!!!!!!!!!!!!!!!!!!!!! add later
+Print screen: 
+![Login with guest button Print Screen](./deliverable_images/NebulousEnigma-Login.png)
 
 ### Requirement: As a science fiction fan, I want a story and visuals that support the fantasy of science fiction, so that I can be immersed.
 
