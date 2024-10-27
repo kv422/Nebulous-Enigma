@@ -18,7 +18,8 @@ Implemented by: Levi Ly
 
 Approved by: Collin Boyer
 
-Print screen: !!!!!!!!!!!!!!!!!!!!!!!!!!!!! add later
+Print screen: 
+![Story implemented in nebulous enigma](./deliverable_images/NebulousEnigma-Story.png)
 
 ### Requirement: As a player, I want to play without logging in, so that I don't have to make an account.
 
@@ -30,19 +31,21 @@ Implemented by: Levi Ly
 
 Approved by: Collin Boyer
 
-Print screen: !!!!!!!!!!!!!!!!!!!!!!!!!!!!! add later
+Print screen: 
+![Login with guest button Print Screen](./deliverable_images/NebulousEnigma-Login.png)
 
 ### Requirement: As a science fiction fan, I want a story and visuals that support the fantasy of science fiction, so that I can be immersed.
 
 Issue: [#39](https://github.com/clw549/Nebulous-Enigma/issues/39)
 
-Pull request: ...(to be added)
+Pull request: https://github.com/clw549/Nebulous-Enigma/pull/77
 
 Implemented by: Kayden Vicenti
 
-Approved by: ...
+Approved by: Ciaran Wham
 
-Print screen: ...(add later)
+Print screen: 
+![Visual update image](./deliverable_images/NebulousEnigma-Immersive.png)
 
 # 3. Tests
 
@@ -69,5 +72,6 @@ Click ([here](https://github.com/clw549/Nebulous-Enigma/blob/7117f94cacca9c5091f
 # 9. Look & feel
 
 # 10. Lessons learned
+Through working on Nebulous Enigma, we have learned that working as a team both provides ease and its own challenges. While many hands make easy work, desicsions can be a little harder as getting the whole group to the same page can be challenging. Getting to being on the same page may be hard, but once that is done, it is easy from there. Understanding what we are doing indevidually has made working together as a whole much easier. If everyone working on the same thing we would confuse eachother, but when we split the work it gets done hastily. Additionally getting work done early so that others have time to understand and work on aswell has been a large help. Overall getting to the same page and getting things done early are the largest lessons Nebulous Enigma has taught us.
 
 # 11. Demo
