@@ -18,7 +18,8 @@ Implemented by: Levi Ly
 
 Approved by: Collin Boyer
 
-Print screen: !!!!!!!!!!!!!!!!!!!!!!!!!!!!! add later
+Print screen: 
+![Story implemented in nebulous enigma](./deliverable_images/NebulousEnigma-Story.png)
 
 ### Requirement: As a player, I want to play without logging in, so that I don't have to make an account.
 
@@ -37,7 +38,7 @@ Print screen:
 
 Issue: [#39](https://github.com/clw549/Nebulous-Enigma/issues/39)
 
-Pull request: [https://github.com/clw549/Nebulous-Enigma/pull/77](https://github.com/clw549/Nebulous-Enigma/pull/77)
+Pull request: https://github.com/clw549/Nebulous-Enigma/pull/77
 
 Implemented by: Kayden Vicenti
 
