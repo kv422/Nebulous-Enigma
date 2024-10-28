@@ -95,7 +95,26 @@ Click [here](https://github.com/clw549/Nebulous-Enigma/blob/7117f94cacca9c5091fc
 
 # 9. Look & feel
 
-We used SCSS and images to make Nebulous Enigma more immersive. By using images and layering other affects over it, we have made Nebulous Enigma more immersive and stylized to a sci-fi feel. This can help our players feel more part of the story, and help the player see what they are doing in this world. 
+We used SCSS and images to make Nebulous Enigma more immersive. By using images and layering other effects over it, we have made Nebulous Enigma more immersive and stylized to a sci-fi feel. This can help our players feel more part of the story, and help the players see what they are doing in this world. 
+
+For our website, we aimed to create an immersive virtual environment through imagery and music, however, we chose to exclude music due to time constraints. Because the plot in our story involves space exploration, the majority of the images chosen were from https://www.nasa.gov/image-of-the-day/
+
+To be mindful of the variety of individuals who may visit our website, we wanted to create an easy-to-use and easy-to-navigate website.
+
+![nav page](./deliverable_images/easy_tonav.png)
+
+Login/Sign Up Page
+![login page](./deliverable_images/loginpage.png)
+![signup page](./deliverable_images/signup.png)
+
+Home Page
+![home page](./deliverable_images/homepage.png)
+
+Story Page
+![story page](./deliverable_images/story.png)
+
+End Page
+![end page](./deliverable_images/endpage.png)
 
 # 10. Lessons learned
 
