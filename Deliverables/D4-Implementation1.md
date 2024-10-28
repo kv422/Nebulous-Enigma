@@ -58,6 +58,7 @@ Implemented by: Kameron Napier
 Approved by: Ciaran Wham
 
 Print screen:
+![Story prompt with return to previous choice button](https://i.imgur.com/kQjfbBe.png)
 
 # 3. Tests
 We have made some automatic tests to test Nebulous Enigma to esure the login and forms work on the front-end to the backend. To do this we used JavaScript Supertest to make unit tests. The tests make sure the site is fetching and retreaving successfully and that the authentication token is properly passed back to the front end. This ensures our system is in working order.
