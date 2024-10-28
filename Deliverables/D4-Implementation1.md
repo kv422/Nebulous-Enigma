@@ -47,6 +47,18 @@ Approved by: Ciaran Wham
 Print screen: 
 ![Visual update image](./deliverable_images/NebulousEnigma-Immersive.png)
 
+### Requirement: As a player, I want to be able to go back to the previous page, so that I don't miss details.
+
+Issue: [#46](https://github.com/clw549/Nebulous-Enigma/issues/46)
+
+Pull request: https://github.com/clw549/Nebulous-Enigma/pull/85
+
+Implemented by: Kameron Napier
+
+Approved by: Ciaran Wham
+
+Print screen:
+
 # 3. Tests
 We have made some automatic tests to test Nebulous Enigma to esure the login and forms work on the front-end to the backend. To do this we used JavaScript Supertest to make unit tests. The tests make sure the site is fetching and retreaving successfully and that the authentication token is properly passed back to the front end. This ensures our system is in working order.
 
