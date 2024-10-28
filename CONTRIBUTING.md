@@ -47,13 +47,8 @@ the action you have taken to solve it.
 
 The aim of this repository is:
 
-  - To provide a README.md and assorted documents anyone can copy and
-    paste, into their project
-  - The content is usable by someone who hasn't written something like
-    this before
-  - Foster a culture of respect and gratitude in the open source
-    community.
-
+  - Create a web-based choose-your-own adventure game for anyone to enjoy at any point.
+    
 ### Does it follow the contributor covenant
 
 This repository has a [code of conduct](CODE_OF_CONDUCT.md), I will
