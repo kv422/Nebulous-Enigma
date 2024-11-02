@@ -45,7 +45,7 @@ function LogIn() {
 
       setLoading(false)
       // takes user to game home page
-      navigate('/home')
+      navigate('/home', window.location.reload())
 
     } catch (err) {
       console.log(err.response.data)
