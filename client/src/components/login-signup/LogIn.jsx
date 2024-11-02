@@ -33,6 +33,8 @@ function LogIn() {
 
       // stores token in local storage to persist
       localStorage.setItem('auth-token', loginRes.data.token)
+      localStorage.setItem('name', loginRes.data.user.name)
+      localStorage.setItem('username', loginRes.data.user.username)
 
       // ////////////////////////////// save/load code
       // // set the state of the user
@@ -96,7 +98,7 @@ function LogIn() {
       <p className='centerLo'> or </p>
 
       <Link to='/game' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'> Play as a guest </Link>
-      {error && <div className="alert alert-danger">{error}</div>} 
+      {error && <div className="alert alert-danger">{error}</div>}
     </div>
     </div>
   </div>

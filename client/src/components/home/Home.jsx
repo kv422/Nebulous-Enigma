@@ -2,21 +2,20 @@ import { useEffect, useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 
 function Home() {
-  const [username, setUsername] = useState('')
+  const [name, setName] = useState('')
   const navigate = useNavigate()
 
 
 
   useEffect(() => {
-    const getUsername = async () => {
-      setUsername(localStorage.getItem('username'))
-    }
-    getUsername()
+    setName(localStorage.getItem('name'))
+
   }, [])
 
   const handleLogOut = async () => {
     localStorage.setItem('auth-token', '')
     localStorage.setItem('username', '')
+    localStorage.setItem('name', '')
     navigate(0)
   }
 
@@ -25,7 +24,7 @@ function Home() {
       <title> Home </title>
       <div className='grid-container'>
       <div className='grid-item'>
-      <p className='userName'>Hello, { username }</p>
+      <p className='userName'>Hello, { name }</p>
       </div>
       <div className='grid-item'>
       <div className='buttonOrg'>
