@@ -41,7 +41,7 @@ function App() {
         )
 
         setUserData({ token, user: userRes.data })
-        localStorage.setItem('username', userRes.data.username)
+        
       }
     }
 

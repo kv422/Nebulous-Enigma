@@ -80,7 +80,7 @@ userRouter.post('/', async (req, res) => {
 
     // create token for login to persist
     const token = jwt.sign({ id: user._id }, 'passwordKey')
-    res.json({ token, user: { id: user._id, username: user.username } })
+    res.json({ token, user: { id: user._id, username: user.username, name: user.name } })
 
   } catch (err) {
     res
@@ -121,8 +121,9 @@ userRouter.post('/tokenIsValid', async (req, res) => {
 userRouter.get('/', auth, async (req, res) => {
   const user = await UserModel.findById(req.user)
   res.json({
-    username: user.username,
     id: user._id,
+    username: user.username,
+    name: user.name,
   })
 })
 
