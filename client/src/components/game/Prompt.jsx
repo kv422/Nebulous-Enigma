@@ -13,12 +13,7 @@ function Prompt({ currentID, choiceClicked }) {
   // {name} in the prompt text, call interpolate(story[currentID].text, name) to
   // replace {name} with the value in the variable called name.
   const interpolate = (str, value) => {
-    return str.replace(/{([^{}]*)}/g,
-      (a, b) => {
-          const r = value;
-          return typeof r === 'string' || typeof r === 'number' ? r : a;
-      }
-    );
+    return str.replace(/{([^{}]*)}/g, value)
   }
 
   useEffect(() => {
