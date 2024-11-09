@@ -1,10 +1,11 @@
 const story = [
   {
     id: 0,
-    text: `You approach a dark, unfamiliar planet, lowering your spacecraft closer to its surface. You're unsure, yet, if you want to land here. As you descend through you clouds, you quickly notice the heavy fog that drapes over the planet. No rain dots your windshield, but you can see (and soon hear) lightning in the distance, striking every so often. Below you, the mountainous, tree-covered terrain might be obscuring what truly inhabits this place. Or perhaps it really is just wilderness.`,
+    text: `Your name is {name}. You approach a dark, unfamiliar planet, lowering your spacecraft closer to its surface. You're unsure, yet, if you want to land here. As you descend through you clouds, you quickly notice the heavy fog that drapes over the planet. No rain dots your windshield, but you can see (and soon hear) lightning in the distance, striking every so often. Below you, the mountainous, tree-covered terrain might be obscuring what truly inhabits this place. Or perhaps it really is just wilderness.`,
     background: ``,
     choice: [
-      { id: 0, text: `Continue.`, goTo: 1 }
+      { id: 0, text: `Continue.`, goTo: 1 },
+      { id: 1, text: `My name is {name}.`, goTo: 1 }
     ]
   },
   {
