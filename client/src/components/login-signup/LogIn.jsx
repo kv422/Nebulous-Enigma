@@ -36,7 +36,8 @@ function LogIn() {
 
       localStorage.setItem('name', loginRes.data.user.name)
       localStorage.setItem('username', loginRes.data.user.username)
-      localStorage.setItem('savedID', loginRes.data.user.savedID)
+      // if no save data, set to 0
+      localStorage.setItem('savedID', loginRes.data.user.savedID ? loginRes.data.user.savedID : 0)
 
       setLoading(false)
       // takes user to game home page
