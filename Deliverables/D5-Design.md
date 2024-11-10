@@ -5,7 +5,7 @@ Once a user presses "play as guest", or inputs valid log in credentials and pres
 
 
 # 2. Architecture
-![architecture](https://ibb.co/Ht6fpMV)
+![architecture](https://i.ibb.co/dPFwJ3r/imageD5.png)
 
 The architecture for Nebulous Enigma is a layered design containing 3 layers. The presentation layer manages user interactions, allowing the UI to be updated without affecting core logic. The application layer centralizes game mechanics, session management, and controls game flow, maintaining a clear boundary between the interface and data storage. The data layer interacts with MongoDB, enabling flexibility in storage management and ensuring consistency. This structure allows independent development and testing within each layer, simplifying updates and allowing ease of growth.
 
