@@ -36,15 +36,6 @@ function LogIn() {
       localStorage.setItem('name', loginRes.data.user.name)
       localStorage.setItem('username', loginRes.data.user.username)
 
-      // ////////////////////////////// save/load code
-      // // set the state of the user
-      // setUser(result?.data)
-      // // store the user in localStorage
-      // result.testing = 1;
-      // localStorage.setItem('user', JSON.stringify(result.testing)); // Ensure it's stringified
-      // console.log(result.testing);
-      // ////////////////////////////// save/load end
-
       setLoading(false)
       // takes user to game home page
       navigate('/home')

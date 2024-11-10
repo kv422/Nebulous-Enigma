@@ -42,7 +42,7 @@ userRouter.post('/signup', async (req, res) => {
       // brute force a password. higher cost = more secure and more time to hash
     const hashedPassword = await bcryptjs.hash(password, 8)
       // create() is shorthand for calling new() + save()
-    UserModel.create({ name, username, password: hashedPassword })
+    UserModel.create({ name, username, password: hashedPassword, savedID: 0 })
 
     // Sending a success code so the await axios.post in SignUp.jsx completes
     res.status(201).json('Successfully created user')
@@ -80,7 +80,7 @@ userRouter.post('/', async (req, res) => {
 
     // create token for login to persist
     const token = jwt.sign({ id: user._id }, 'passwordKey')
-    res.json({ token, user: { id: user._id, username: user.username, name: user.name } })
+    res.json({ token, user: { id: user._id, username: user.username, name: user.name, savedID: user.savedID } })
 
   } catch (err) {
     res
@@ -117,6 +117,27 @@ userRouter.post('/tokenIsValid', async (req, res) => {
   }
 })
 
+// send save data
+userRouter.post('/save', async (req, res) => {
+  try {
+    const { username, savedID } = req.body
+
+    if (!username) {
+      return res
+        .status(400)
+        .json('Invalid username')
+    }
+
+    // save data
+    await UserModel.updateOne({ username }, { $set: { savedID: savedID } })
+    res.status(201).json('Successfully saved progress')
+  } catch (err) {
+    res
+      .status(500)
+      .json({ error: err.message })
+  }
+})
+
 // get user's username and their token
 userRouter.get('/', auth, async (req, res) => {
   const user = await UserModel.findById(req.user)
@@ -124,6 +145,7 @@ userRouter.get('/', auth, async (req, res) => {
     id: user._id,
     username: user.username,
     name: user.name,
+    savedID: user.savedID,
   })
 })
 

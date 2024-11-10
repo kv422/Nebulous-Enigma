@@ -1,13 +1,13 @@
 import React from 'react'
-import { useState } from 'react'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react'
+import axios from '../../api/axios'
 import Choice from './Choice'
 import story from '../../story'
 
 function Prompt({ currentID, choiceClicked }) {
 
-  const [user, setUser] = useState(null); // State to hold the user data
-  const [name, setName] = useState('')
+  const [name, setName] = useState(localStorage.getItem('name'))
+  const [username, setUsername] = useState(localStorage.getItem('username'))
 
   // Finds and replaces "{value}" in a string, so e.g. in story.jsx, if you write
   // {name} in the prompt text, call interpolate(story[currentID].text, name) to
@@ -17,20 +17,20 @@ function Prompt({ currentID, choiceClicked }) {
   }
 
   useEffect(() => {
-    const loggedInUser = localStorage.getItem("user");
-    if (loggedInUser) {
-      const foundUser = JSON.parse(loggedInUser); // Parse the user data
-      setUser(foundUser); // Update state with the user data
+    const saveProgress = async () => {
 
-      console.log(foundUser.testing)
-      console.log(loggedInUser)
+      if (username) {
+        try {
+          // send post request to /signup
+          await axios.post('/save', { username, savedID: currentID })
+          localStorage.setItem('savedID', currentID)
+        } catch (err) {
+          console.log(err)
+        }
+      }
     }
 
-    setName(localStorage.getItem('name'))
-
-
-
-
+    saveProgress()
 
   }, []); // Empty dependency array means this runs once on mount
 
@@ -47,7 +47,7 @@ function Prompt({ currentID, choiceClicked }) {
         { story[currentID].choice.map((choice) => {
           return (
             // goes to a choice which is an index, here "choice.goTo" goes to the button that was clicked goto index
-            <Choice handleClick={ () => choiceClicked(choice.goTo) } text={ interpolate(choice.text, name) } />
+            <Choice key={ choice.id } handleClick={ () => choiceClicked(choice.goTo) } text={ interpolate(choice.text, name) } />
           )
         })}
       </div>

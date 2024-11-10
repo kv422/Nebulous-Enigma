@@ -15,7 +15,8 @@ function App() {
     token: null,
     user: null
   })
-  const [currentID, setCurrentID] = useState(0)
+  const [currentID, setCurrentID] = useState(localStorage.getItem('savedID'))
+
 
   // useEffect is a built-in React hook that runs every time a page is rendered
   useEffect(() => {
@@ -41,14 +42,14 @@ function App() {
         )
 
         setUserData({ token, user: userRes.data })
-        
       }
+
     }
 
     updateToken()
   }, [])
 
-  const choiceClicked = (goTo) => {
+  const choiceClicked = async (goTo) => {
     setCurrentID(goTo)
   }
 
@@ -64,7 +65,7 @@ function App() {
                                                    : (<LogIn />) } />
           <Route path='/home' element={ userData.token ? (<Home />)
                                                    : (<LogIn />) } />
-          <Route path='/game' element={ <Prompt currentID={ currentID } choiceClicked={ choiceClicked } /> } />
+          <Route path='/game' element={ <Prompt key={ currentID } currentID={ currentID } choiceClicked={ choiceClicked } /> } />
         </Routes>
       </UserContext.Provider>
     </BrowserRouter>
