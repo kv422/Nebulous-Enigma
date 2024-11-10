@@ -12,7 +12,31 @@
 
 # 4. Sequence diagram
 
+### *Use Case 2: Load progress*
+**Actor:** Player\
+**Trigger:** The player wants to load their save file from a previous playthrough.\
+**Pre-conditions:** The player has a save file and is at the starting screen of the game.\
+**Post-condition:** The player is redirected to their save point. 
 
+**Success Scenario:**
+
+1. The system presents an option to load a save.
+2. The player enters their username and password.
+3. The system redirects the player to the point in the game where they last saved.
+
+**Alternate Scenarios:**
+
+*2a. The log-in information is invalid.*
+1. The system tells the user that their log-in information is invalid.
+2. The system displays the start screen.
+
+*3a. The save data is unusable by the system.*
+1. The system notifies the player of this error.
+2. The system redirects the player back to the start screen.
+
+### *Sequence Diagram: Load progress*
+
+![Sequence Diagram](https://i.ibb.co/nnnrLxs/Nebulous-Sequence.png)
 
 # 5. Design patterns
 Home Page - Façade Pattern (Structural Design Pattern): https://github.com/clw549/Nebulous-Enigma/blob/main/client/src/components/home/Home.jsx
