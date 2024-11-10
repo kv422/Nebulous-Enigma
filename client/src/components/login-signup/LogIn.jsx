@@ -33,12 +33,14 @@ function LogIn() {
 
       // stores token in local storage to persist
       localStorage.setItem('auth-token', loginRes.data.token)
+
       localStorage.setItem('name', loginRes.data.user.name)
       localStorage.setItem('username', loginRes.data.user.username)
+      localStorage.setItem('savedID', loginRes.data.user.savedID)
 
       setLoading(false)
       // takes user to game home page
-      navigate('/home')
+      navigate('/home', window.location.reload())
 
     } catch (err) {
       console.log(err.response.data)

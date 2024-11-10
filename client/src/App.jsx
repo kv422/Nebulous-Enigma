@@ -17,7 +17,6 @@ function App() {
   })
   const [currentID, setCurrentID] = useState(localStorage.getItem('savedID'))
 
-
   // useEffect is a built-in React hook that runs every time a page is rendered
   useEffect(() => {
     // ^^ so login status is constantly checked with updateToken()
@@ -42,11 +41,18 @@ function App() {
         )
 
         setUserData({ token, user: userRes.data })
+
+      } else {
+        // set default values
+        localStorage.setItem('name', 'Rook')
+        localStorage.setItem('username', '')
+        localStorage.setItem('savedID', 0)
       }
 
     }
 
     updateToken()
+
   }, [])
 
   const choiceClicked = async (goTo) => {

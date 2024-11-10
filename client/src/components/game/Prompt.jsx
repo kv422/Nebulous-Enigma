@@ -22,7 +22,7 @@ function Prompt({ currentID, choiceClicked }) {
       if (username) {
         try {
           // send post request to /signup
-          await axios.post('/save', { username, savedID: currentID })
+          axios.post('/save', { username, savedID: currentID })
           localStorage.setItem('savedID', currentID)
         } catch (err) {
           console.log(err)
