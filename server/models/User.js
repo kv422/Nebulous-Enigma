@@ -16,6 +16,9 @@ const UserSchema = new mongoose.Schema({
     required: true,
     type: String,
     minLength: 4,
+  },
+  savedID: {
+    type: Number
   }
 })
 

@@ -51,7 +51,7 @@ const story = [
     background: ``,
     choice: [
       { id: 0, text: `Start from the beginning.`, goTo: 0 },
-      { id: 1, text: `Return to previous page.`, goTo: 0 }
+      { id: 1, text: `Return to previous page.`, goTo: 4 }
     ]
   }
 ]

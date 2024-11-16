@@ -95,7 +95,7 @@ function SignUp() {
 
       <p className='center'> Already have an account? </p>
       <Link to='/' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'> Log In </Link>
-      {error && <div className="alert alert-danger">{error}</div>} 
+      {error && <div className="alert alert-danger">{error}</div>}
     </div>
   </div>
   </div>

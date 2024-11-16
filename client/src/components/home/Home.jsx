@@ -2,20 +2,14 @@ import { useEffect, useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 
 function Home() {
-  const [name, setName] = useState('')
+  const [name, setName] = useState(localStorage.getItem('name'))
   const navigate = useNavigate()
-
-
-
-  useEffect(() => {
-    setName(localStorage.getItem('name'))
-
-  }, [])
 
   const handleLogOut = async () => {
     localStorage.setItem('auth-token', '')
     localStorage.setItem('username', '')
     localStorage.setItem('name', '')
+    localStorage.setItem('savedID', 0)
     navigate(0)
   }
 
