@@ -47,13 +47,119 @@ const story = [
   },
   {
     id: 5,
-    text: `End of the demo.`,
+    text: `After several moments, who knows how long, you come to consciousness. The land has simalarities to your own planet, but some striking differences. Plants are nothing that you've seen before. With whats left of your ship you can gather a limited amount of information. The planet's climate is habitable for you, there is H2O on the surface of the planet, and the biomatter on the planet contains some basic sustanance. At the word "sustanance" you feel your stomach drop. You need food and water. What next?`,
     background: ``,
     choice: [
-      { id: 0, text: `Start from the beginning.`, goTo: 0 },
-      { id: 1, text: `Return to previous page.`, goTo: 4 }
+      { id: 0, text: `Search for food.`, goTo: 6 },
+      { id: 1, text: 'Search for water.', goTo: 7 },
+      { id: 2, text: 'Stay in the ship, search for what you can find.', goTo: 8 },
+      { id: 3, text: `Return to previous page.`, goTo: 4 }
+    ]
+  },
+  {
+    id: 6,
+    text: `As your stomach drops you think of what might be edible? Your ship cannot check anything for you as the systems are too damaged from the landing. Getting out of your ship and looking for food, you find a berry bush of some sort, the berries are bright red and there are so many berries to pick. The bush is large and has what seems to be normal leaves.`,
+    background: '',
+    choice: [
+      {id: 0, text: 'Eat the berries.', goTo: 8},
+      {id: 1, text: 'Do not eat the berries, keep searching.', goTo: 9},
+      {id: 2, text: 'Return to previous page.', goTo: 5}
+    ]
+  },
+  {
+    id: 7,
+    text: 'Searching for water was tiring but you find some lake that spans as far as you can see. It looks clear, and you can also see some alien fish. At one part of the beach you can see some other creatures drinking the water. You have a filtered canteen that should purify any possible micro organisms.',
+    background: '',
+    choice: [
+      {id: 0, text: 'Collect some water.', goTo: 10},
+      {id: 1, text: 'Do not collect water, search for food instead.', goTo: 6},
+      {id: 2, text: 'Return to previous page.', goto: 5}
+    ]
+  },
+  {
+    id: 8,
+    text: '{name} has died. RIP to a fallen pilot after a crashlanding. Someday you may be found by another pilot, but that is past your time.',
+    background: '',
+    choice: [
+      {id:0, text: 'Start over.', goTo: 0}
+    ]
+  },
+  {
+    id: 9,
+    text: 'You decide against the berries. Instead searching for something more animal. After a while you found some sort of track, some creature frequents this area. You also find another bush, its very thorny and the berries are a pale white color. The bush is mostly picked over but there are still a few left.',
+    background: '',
+    choice: [
+      {id:0, text: 'Make a trap for the animal.', goTo: 11},
+      {id:1, text: 'Eat some of the pale white berries.', goTo: 12},
+      {id:2, text: 'Return to previous page.', goTo: 6}
+    ],
+  },
+  {
+    id: 10,
+    text: 'You collect some water. As you do, a large pirate looking ship comes over the horizon moving at an incredible pace. You are not sure how but they look like they are coming for you.',
+    background: '',
+    choice: [
+      {id:0, text: 'Run away!', goTo: 13},
+      {id:1, text: 'Wait for their arrival.', goTo: 15},
+      {id:2, text: 'Return to previous page.', goTo: 7}
+    ]
+  },
+  {
+    id: 11,
+    text: 'You make a trap for the animal. It is rudementary but luckily you took that one trapping class in pilot school. You assure that it will work and wait... and wait... and wait... Then you see the small animal, its a cat sized squirrel from the look of it. As it steps into the trap it springs and successfully captures the animal.',
+    background: '',
+    choice: [
+      {id:0, text: 'Search for water.', goTo: 7},
+      {id: 1, text: 'Eat your well deserved meal.', goTo: 14}
+    ]
+  },
+  {
+    id: 12,
+    text: 'You eat some pale white berries. Using this knowledge you continue finding these pale white berries, you continue to survive in this planet until you are able to escape. fixing your ship with leftover parts until you are able to fix the communication system and send a distress signal to be saved. Congratulations, you, {name} survived through the harsh planet.',
+
+    choice: [
+      {id: 0, text: 'Start from the beguinning.', goTo: 0},
+      {id: 1, text: 'Return to previous page.', goTo: 9}
+    ]
+  },
+  {
+    id: 13,
+    text: 'You start running from the ship with the water you collected. Suddenly you hear a loud "BANG!" and then darkness. . .',
+    background: '',
+    choice: [
+      {id: 0, text: 'Continue.', goTo: 8},
+      {id:1, text: 'Return to previous page.', goTo: 10}
+    ]
+  },
+  {
+    id: 14,
+    text: 'You eat your well earned meal. Using your expert trapping skills you are able to live on this planet. Making your ship a shelter, and some gardens nearby with what crops you find to be good. Living your life off the grid and happily by yourself.',
+    background: '',
+    choice: [
+      {id:0, text: 'Start from beguinning.', goTo:0},
+      {id:2, text: 'Return to previous page.', goTo: 11}
+    ]
+  },
+  {
+    id: 15,
+    text: 'You await the pirates arrival. When they approach they ask you who you are and if you will join them.',
+    background: '',
+    choice: [
+      {id:0, text: 'I will join you, my name is {name}.', goTo:16},
+      {id:1, text: 'No! I will not join you!', goTo:8}, //alternative ending: kill all the pirates and use their supplies to repair your space craft somehow
+      {id:2, text: 'Return to previous page.', goTo:10}
+    ]
+  },
+  {
+    id:16, 
+    text: 'You join the pirates with your technology you rule the seas eventually usurping the capitain and leading your own vessil.',
+    background:'',
+    choice: [
+      {id:0, text: 'Return to previous page.', goTo:15},
+      {id:1, text: 'Start over.', goTo:0}
     ]
   }
+
 ]
 
 export default story;
