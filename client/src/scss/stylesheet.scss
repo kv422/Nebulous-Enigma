@@ -72,6 +72,28 @@
     text-align: center;
 }
 
+.navbar {
+    width: 100vw;
+    background-color: transparent; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navItem {
+    display: block;
+    width: fit-content;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+.navItem:hover {
+    background-color: #555;
+    color: white;
+}
+
 
 .userName {
     font-size: 50px;

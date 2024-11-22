@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react';
 import Choice from './Choice'
+import Navbar from './Navbar'
 import story from '../../story'
 
 function Prompt({ currentID, choiceClicked }) {
@@ -40,6 +41,7 @@ function Prompt({ currentID, choiceClicked }) {
 
   return (
     <div className='gameBG'>
+      <Navbar></Navbar>
       <div  className='story'>
         <p> { interpolate(story[currentID].text, name) } </p>
       </div>
