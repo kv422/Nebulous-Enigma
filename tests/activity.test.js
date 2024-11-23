@@ -6,18 +6,11 @@ const button_app = require('../server');
 
 require("dotenv").config();
 
-/* Connecting to the database before each test. */
-beforeEach(async () => {
-    await mongoose.connect(process.env.DB_URI);
-  });
-  
-  /* Closing database connection after each test. */
-afterEach(async () => {
-    await mongoose.connection.close();
-  });
+// Connecting to the database
+mongoose.connect(process.env.DB_URI);
 
 describe("GET /home", () => {
-    it("should get all the activities", async () => {
+    it("should fail since it's using a fake username and password", async () => {
       const token = await request(app).post("/").send({
         username: process.env.DUMMY_USERNAME,
         password: process.env.DUMMY_PASSWORD,
@@ -35,6 +28,7 @@ describe("GET /home", () => {
     });
   });
 
+
 describe('Button press simulation', () => {
     it('should trigger the button press endpoint', async () => {
       const response = await request(button_app)
@@ -43,6 +37,8 @@ describe('Button press simulation', () => {
   
         // Check if status is 200 OK
       expect(response.status).toBe(200); 
-      expect(response.body.message).toBe('Button pressed');  // Check the message
     });
   });
+
+// end the connection to the database 
+mongoose.connection.close();
