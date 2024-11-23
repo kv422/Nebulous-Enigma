@@ -29,7 +29,34 @@ Approved by: Levi Ly
 
 # 3 Tests
 ## 3.1 Unittests
+1. This test was made with supertest
+2. Do keep in mind that this test file uses server.js and app.js files in the root directory, but this is where all the test code actually is:
+   https://github.com/clw549/Nebulous-Enigma/tree/main/tests
+3. So this tests if the root page, aka the "/" page can recieve a button click from the user. This uses a mock button by using a boolean called ButtonPressed.
+   The code for this mock button is located here:
+
+   Mock button: https://github.com/clw549/Nebulous-Enigma/blob/main/server.js
+
+   Tests: https://github.com/clw549/Nebulous-Enigma/tree/main/tests
+
+4. Please keep in mind that both the automated tests are run at once. The one that passed is the button pressed one.
+   The one that failed is a user log in test, which will be discussed in more detail in 3.2.
+   ![3.1 image](https://i.ibb.co/xmx5gW5/Screenshot-2024-11-23-162547.png)
+
 ## 3.2 Acceptance tests
+1. This test was made with supertest
+2. Do keep in mind that this test file uses server.js and app.js files in the root directory, but this is where all the test code actually is:
+   https://github.com/clw549/Nebulous-Enigma/tree/main/tests
+3. So this tests tests if a given username/password combination will work in playing the game.
+   This uses a dummy username and a dummy password to test and see if it will move onto the next screen.
+   This test should fail because obviously the dummy username and password are not in the database.
+
+   The code for this test is in the same file as 3.1: https://github.com/clw549/Nebulous-Enigma/tree/main/tests
+
+4. Please keep in mind that both the automated tests are run at once. The one that failed is the fake log in attempt.
+   The error code it gives is 404 because it couldn't find the page that it would go to had the username and password been legit.
+   ![3.2 image](https://i.ibb.co/xmx5gW5/Screenshot-2024-11-23-162547.png)
+
 
 # 4 Demo
 
