@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 
 const app = express();
 
+app.use(express.json());
+
 /* Loading the environment variables from the .env file. */
 require("dotenv").config();
 
@@ -18,3 +20,13 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
+
+  let buttonPressed = false;
+
+// Endpoint that simulates the button press
+app.post('/press-button', (req, res) => {
+  buttonPressed = true;
+  res.status(200).json({ message: 'Button pressed', buttonPressed });
+});
+
+module.exports = app;
