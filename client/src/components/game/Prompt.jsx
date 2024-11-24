@@ -33,16 +33,16 @@ function Prompt({ currentID, choiceClicked }) {
 
     saveProgress()
 
+
   }, []); // Empty dependency array means this runs once on mount
 
   // I'm just straight up using interpolate here since I can't foresee us needing
   // to interpolate any values besides character name, but we could change this
   // in the future if necessary
-
   return (
-    <div className='gameBG'>
-      <Navbar></Navbar>
-      <div  className='story'>
+    <div className='game' style={ { backgroundImage: `url(${ story[currentID].background })` } }>
+      <Navbar />
+      <div className='story' data-augmented-ui="tl-clip br-clip">
         <p> { interpolate(story[currentID].text, name) } </p>
       </div>
       <div className='choice'>

@@ -5,11 +5,12 @@ function Home() {
   const [name, setName] = useState(localStorage.getItem('name'))
   const navigate = useNavigate()
 
-  const handleLogOut = async () => {
+  const handleLogOut = () => {
     localStorage.setItem('auth-token', '')
+    localStorage.setItem('name', 'Rook')
     localStorage.setItem('username', '')
-    localStorage.setItem('name', '')
     localStorage.setItem('savedID', 0)
+
     navigate(0)
   }
 
@@ -17,21 +18,21 @@ function Home() {
     <div className='homeBG'>
       <title> Home </title>
       <div className='grid-container'>
-      <div className='grid-item'>
-      <p className='userName'>Hello, { name }</p>
+        <div className='grid-item'>
+          <p className='userName'> Hello, { name } </p>
+        </div>
+        <div className='grid-item'>
+          <div>
+            <Link to='/game' className='play'> play </Link>
+          </div>
+        </div>
+        <div className='grid-item'>
+          <div>
+            <button onClickCapture={ handleLogOut } className='button-33'> log out </button>
+          </div>
+        </div>
       </div>
-      <div className='grid-item'>
-      <div className='buttonOrg'>
-      <Link to='/game' className='button-33'> PLAY </Link>
-      </div>
-      </div>
-      <div className='grid-item'>
-      <div className='buttonOrg'>
-      <button onClickCapture={ handleLogOut } className='button-33'> LOG OUT </button>
-      </div>
-      </div>
-</div>
-      </div>
+    </div>
   )
 }
 

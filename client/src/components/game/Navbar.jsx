@@ -1,34 +1,32 @@
 import React from 'react'
 import { useContext } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import UserContext from '../../context/UserContext'
 
 function Navbar() {
     const { setUserData } = useContext(UserContext)
     const navigate = useNavigate()
 
-    function logout() {
+    const handleLogOut = () => {
       setUserData({
         token: null,
         user: null,
       })
 
-      localStorage.removeItem('auth-token')
+      localStorage.setItem('auth-token', '')
+      localStorage.setItem('name', 'Rook')
+      localStorage.setItem('username', '')
+      localStorage.setItem('savedID', 0)
 
-      localStorage.removeItem('name')
-      localStorage.removeItem('username')
-
-      localStorage.removeItem('savedID')
-
-      navigate('../')
     }
 
     return (
-        <div className='navbar'>
-            <a className='navItem' href='../home'>Home</a>
-            <a className='navItem' onClick={logout}>Logout</a>
-        </div>
-    );
+      <div className='navbar'>
+        <Link to='/home' className='navItem'> home </Link>
+        { localStorage.getItem('auth-token') ? <Link to='/' onClickCapture={ handleLogOut } className='navItem'> log out </Link>
+                                             : null }
+      </div>
+    )
 }
 
 export default Navbar;
