@@ -1,4 +1,14 @@
 # 1 Introduction
+Our system is a web-based interactive storytelling game that immerses players in a "choose your own adventure" experience. Each story unfolds through a series of pages, featuring 
+descriptive text to set the narrative and interactive buttons for players to make choices that influence the plot's direction. The system ensures accessibility and flexibility by 
+providing multiple login options: users can create an account, log in, or play as a guest. Account creation and login credentials, including usernames and passwords, are securely managed 
+and stored using MongoDB. The game is built on the MERN stack, leveraging MongoDB for efficient data handling and JavaScript for seamless gameplay logic.
+
+One of the standout features is the ability to save and resume progress for logged-in users. Each player's progress is tracked and stored, enabling them to pick up right where they left 
+off. Guest users, while not having progress saved, can fully experience the game’s interactive narrative. The user-friendly interface includes a sign-up page for new accounts and ensures 
+a streamlined experience for navigating between the game and login pages. This system provides an engaging and personalized adventure while maintaining robust back-end functionality to 
+support user accounts and data persistence.
+
 
 # 2 Implemented Requirements
 
