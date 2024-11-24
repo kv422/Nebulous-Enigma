@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import '/node_modules/augmented-ui/augmented-ui.min';
 
+
+
+@fontface {
+    font-family: 'Type Accelerator';
+    src: url('/public/fonts/TypeAccelerator.otf');
+}
+
+html {
+  background: #000;
+}
 
 .aldrich-regular {
     font-family: "Aldrich", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
-  
+
 
 .loginBG {
     background-color: #FFFFFF; /* For browsers that do not support gradients */
@@ -18,6 +29,7 @@
     font-family: "Aldrich", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-attachment: fixed;
   }
 
 .signBG {
@@ -29,6 +41,7 @@
     font-family: "Aldrich", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-attachment: fixed;
 }
 
 .homeBG {
@@ -43,13 +56,13 @@
     position: absolute;
     left: 0;
     top: 0;
-
+    background-attachment: fixed;
 }
 
-.gameBG {
+.game {
     background-color: #FFFFFF; /* For browsers that do not support gradients */
-    background-image: radial-gradient(closest-side, transparent, #000000),url(./images/ear_img.jpg);
     background-position: center;
+    background-size: cover;
     color: #FFFFFF;
     height: 100%;
     width: 100%;
@@ -57,41 +70,107 @@
     font-weight: 400;
     font-style: normal;
     position: absolute;
-    left: 0;
-    top: 0;
     font-size: 25px;
+    background-attachment: fixed;
+    overflow: auto;
+}
 
+.play {
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: #1f374f;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    padding: 20px 35px;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 3px solid white;
+}
+
+.play:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05);
+    color: rgba(44,187,99);
+    border: 3px solid rgba(44,187,99);
 }
 
 .story {
+    --aug-border: initial;
+    --aug-border-all: 7px;
+    --aug-border-bg: #2d6e75;
+
+    --aug-clip-bl1: initial;
+    --aug-clip-bl2: initial;
+    --aug-bl-extend1: 30%;
+
+    --aug-clip-tr1: initial;
+    --aug-clip-tr2: initial;
+    --aug-tr-extend1: 40%;
+
+    --aug-clip-l1: initial;
+    --aug-clip-l2: initial;
+    --aug-l-extend1: 20%;
+
+    --aug-clip-r1: initial;
+    --aug-clip-r2: initial;
+    --aug-r-extend1: 20%;
+
+    --aug-inlay: initial;
+    --aug-inlay-all: 0px;
+    --aug-inlay-bg: #082a2e;
+    --aug-inlay-opacity: 0.75;
+
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    margin: 20%;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    -webkit-text-stroke: 4px black;
+    paint-order: stroke fill;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.8), 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .choice {
     text-align: center;
+    padding: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-around;
+    -webkit-text-stroke: 3px black;
+    paint-order: stroke fill;
 }
 
 .navbar {
     width: 100vw;
-    background-color: transparent; 
+    background-color: #082a2e;
+    border-bottom: 7px solid #2d6e75;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    position: fixed;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5), 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
 .navItem {
+    font-size: 20px;
     display: block;
     width: fit-content;
     color: white;
-    padding: 8px 16px;
+
     text-decoration: none;
     border-radius: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+    -webkit-text-stroke: 4px black;
+    paint-order: stroke fill;
+    font-family: 'TypeAccelerator';
 }
 
 .navItem:hover {
-    background-color: #555;
-    color: white;
+    color: rgba(44,187,99);
+    transition: all 250ms;
+    transform: scale(1.05);
 }
 
 
@@ -147,7 +226,6 @@
     cursor: pointer;
     display: inline;
     padding: 7px 20px;
-    margin: 10%;
     text-align: center;
     text-decoration: none;
     transition: all 250ms;
@@ -174,4 +252,5 @@
 .button-33:hover {
     box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
     transform: scale(1.05);
+    color: rgba(44,187,99);
 }
