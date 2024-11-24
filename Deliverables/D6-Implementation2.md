@@ -35,6 +35,19 @@ Implemented by: Levi Ly
 
 Approved by: Ciaran Wham
 
+## 2.4 Navigation Bar
+Requirement: While the player is playing the game, they have the option to return home, or logout.
+
+Issue: https://github.com/clw549/Nebulous-Enigma/issues/116
+
+Pull request: https://github.com/clw549/Nebulous-Enigma/pull/115
+
+Implemented by: Isaac Schwarz
+
+Approved by: Levi Ly
+
+![Navbar](https://i.ibb.co/zscXjNT/Screenshot-2024-11-23-at-9-31-11-PM.png)
+
 # 3 Tests
 ## 3.1 Unittests
 1. This test was made with supertest
@@ -67,6 +80,7 @@ Approved by: Ciaran Wham
 
 
 # 4 Demo
+https://nau.zoom.us/rec/share/N8HlunC4EgnFUkb3CMhAPudkubgaUzaPL_Ad4VG4Idd9iKKnuIZ8wqnvU2Jtmith.1AgRDKfrOSAko-A9
 
 # 5 Code Quality
 We adhered to the following practices when writing code:
