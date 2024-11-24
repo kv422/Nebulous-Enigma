@@ -1,31 +1,39 @@
 # 1 Introduction
 
 # 2 Implemented Requirements
+
 ## 2.1 Enriching story
 Requirement: As a player, I want to read multiple endings, so that I can learn more about the game's world.
 
-Issue: #34 
+Issue: https://github.com/clw549/Nebulous-Enigma/issues/34
 
-Pull request: https://github.com/clw549/Nebulous-Enigma/pull/114 #114 
+Pull request: https://github.com/clw549/Nebulous-Enigma/pull/114
 
-Links to an external site. 
-
-Implemented by: Ciaran Wham 
+Implemented by: Ciaran Wham
 
 Approved by: Levi Ly
 
 ## 2.2 Backtracking
 Requirement: As a player, I want to return to previous choices I've made, so that I can experience other paths of the story.
 
-Issue: #43
+Issue: https://github.com/clw549/Nebulous-Enigma/issues/43
 
-Pull request: https://github.com/clw549/Nebulous-Enigma/pull/114 #114 
+Pull request: https://github.com/clw549/Nebulous-Enigma/pull/114
 
-Links to an external site. 
-
-Implemented by: Ciaran Wham 
+Implemented by: Ciaran Wham
 
 Approved by: Levi Ly
+
+## 2.3 Saving/Loading
+Requirement: If the player is logged into an account, their progress is saved as they play to a database server.
+
+Issue: https://github.com/clw549/Nebulous-Enigma/issues/116
+
+Pull request: https://github.com/clw549/Nebulous-Enigma/pull/109
+
+Implemented by: Levi Ly
+
+Approved by: Ciaran Wham
 
 # 3 Tests
 ## 3.1 Unittests
@@ -34,6 +42,16 @@ Approved by: Levi Ly
 # 4 Demo
 
 # 5 Code Quality
+We adhered to the following practices when writing code:
+- Variables and functions should have concise but descriptive names, using lowerCamelCase. Avoid unclear abbreviations. Never use single-letter names like "x".
+- Function names should be verbs.
+- Indents are 2 spaces wide.
+- Do not use semicolons in React components. It's possible for semicolons to break some lines of code, so we omit them.
+- Use spaces between curly braces and the expression inside them, e.g. { value }.
+- Define state variables at the top of the component.
+- Define functions using 'const'. For our purposes, there is no difference between using 'const' and 'function', but we stick to using 'const'.
+- For multi-line expressions (function declarations, if/else conditions) place opening curly brackets on the same line as the preceding control flow statement. Ending curly brackets should be on their own line.
+- Use whitespace to separate functions, behavior, etc. as appropriate. One line of whitespace is usually adequate. Use no more than two lines of whitespace between elements.
 
 # 6 Lessons learned
-We have learned a lot about React and MongoDB through this project. React being a great tool for modular peices of the story, where each story peice uses the same HTML and alters the text through using objects. Using React in this way we made our website easy to add story modules to and have different number of options for each one. React helps make the site more edit friendly. MongoDB is the database system we used in our website. We learned both how to query the website and how to add tuples into the website. We have also learned how to use local browser storage so that a user can be remembered and have information specific to them used within the website. We have also grown greatly as a team, showing how well we can work together and helping eachother in persuit of bettering ourselves. Overall this project has been a great learning experiece in teamwork and systems to run a website.
+We have learned a lot about React and MongoDB through this project. React has been a great tool for making our story modular, where each story prompt uses the same HTML/Javascript and simply alters the text displayed to the user. In this way, we made our website easy to add story pages to and have any number of options for each one. Additionally, React helps make the site more modification-friendly. MongoDB is the database system we used for our website. We learned both how to query the database and how to add documents (in our case, accounts) to it. We have also learned how to use local browser storage so that a user can be remembered and have information specific to them used within the website, such as character names being displayed in the story. We have also grown greatly as a team, showing how well we can work together and helping each other in pursuit of bettering ourselves. Overall, this project has been a great experience in learning teamwork and the systems necessary to run a website.
