@@ -21,20 +21,22 @@ html {
 
 .loginBG {
     background-color: #FFFFFF; /* For browsers that do not support gradients */
-    background-image: radial-gradient(closest-side, transparent, #000000),url(./images/jwt_img.png);
+    background-image: radial-gradient(closest-side, transparent, #000000),url(./images/login_galaxy.gif);
     animation: fadeIn 5s;
     background-position: center;
-    height: 100%;
+    background-repeat: no-repeat;
+    height: auto;
     width: 100%;
     font-family: "Aldrich", sans-serif;
     font-weight: 400;
     font-style: normal;
     background-attachment: fixed;
+    background-size: cover;
   }
 
 .signBG {
     background-color: #FFFFFF; /* For browsers that do not support gradients */
-    background-image: radial-gradient(closest-side, transparent, #000000),url(./images/jwt_img.png);
+    background-image: radial-gradient(closest-side, transparent, #000000),url(./images/signup2.gif);
     background-position: center;
     height: 100%;
     width: 100%;
@@ -42,11 +44,14 @@ html {
     font-weight: 400;
     font-style: normal;
     background-attachment: fixed;
+    background-size: cover;
+
+    
 }
 
 .homeBG {
     background-color: #FFFFFF; /* For browsers that do not support gradients */
-    background-image: radial-gradient(closest-side, transparent, #000000),url(./images/jwt_green.jpg);
+    background-image: radial-gradient(closest-side, transparent, #000000),url(./images/signup.gif);
     background-position: center;
     height: 100%;
     width: 100%;
@@ -57,6 +62,7 @@ html {
     left: 0;
     top: 0;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .game {
@@ -75,6 +81,8 @@ html {
     overflow: auto;
 }
 
+
+
 .play {
     font-size: 50px;
     text-decoration: none;
@@ -85,6 +93,18 @@ html {
     text-decoration: none;
     transition: all 250ms;
     border: 3px solid white;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .play:hover {
@@ -164,7 +184,7 @@ html {
     margin-right: 25px;
     -webkit-text-stroke: 4px black;
     paint-order: stroke fill;
-    font-family: 'TypeAccelerator';
+    font-family: "Aldrich", sans-serif;
 }
 
 .navItem:hover {
@@ -179,6 +199,7 @@ html {
     padding: 5%;
     color: white;
     text-shadow: 0 0 10px white
+    
 }
 
 
