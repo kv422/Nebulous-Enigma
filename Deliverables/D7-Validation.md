@@ -30,20 +30,20 @@ Nebulous Enigma is a web-based interactive storytelling game that immerses playe
 - **What is desired:** "A load and save feature."
 
 ### User 2:
-- **Navigability:** 
-- **Story:** 
-- **Immersion:** 
-- **Interface:** 
-- **What stood out:** 
-- **What is desired:** 
+- **Navigability:** 8
+- **Story:** 8
+- **Immersion:** 7
+- **Interface:** 7
+- **What stood out:** Try to avoid localStorage for tokens, and have client-side form validation to prevent the extra request to the server.
+- **What is desired:** A bit of dynamics help, like RNG, instead of full static content. try nginx if you aren't using that already due to the limited resources of a pi
 
 ### User 3:
-- **Navigability:** 
-- **Story:** 
-- **Immersion:** 
-- **Interface:** 
-- **What stood out:** 
-- **What is desired:** 
+- **Navigability:** 7
+- **Story:** 7
+- **Immersion:** 7
+- **Interface:** 8
+- **What stood out:** The background was amazing. The artist did a great job. I liked the story.
+- **What is desired:** I played on my phone and I noticed that choosing an action were on the far right. It would have been nice if it was centered. A save point would be a great tool for players that don't want to start over and just choose the action they didn't already pick. Play as guess would bring me to a blank page even when I tried on pc. The story was great. However the intro felt a bit abrupt. Having the main character have a reason/purpose of going to space would be awesome for the intro. Either way, great game. I enjoyed it.
 
 ### User 4:
 - **Navigability:** 
