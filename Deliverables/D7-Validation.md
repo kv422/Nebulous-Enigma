@@ -45,14 +45,6 @@ Nebulous Enigma is a web-based interactive storytelling game that immerses playe
 - **What stood out:** The background was amazing. The artist did a great job. I liked the story.
 - **What is desired:** I played on my phone and I noticed that choosing an action were on the far right. It would have been nice if it was centered. A save point would be a great tool for players that don't want to start over and just choose the action they didn't already pick. Play as guess would bring me to a blank page even when I tried on pc. The story was great. However the intro felt a bit abrupt. Having the main character have a reason/purpose of going to space would be awesome for the intro. Either way, great game. I enjoyed it.
 
-### User 4:
-- **Navigability:** 
-- **Story:** 
-- **Immersion:** 
-- **Interface:** 
-- **What stood out:** 
-- **What is desired:** 
-
 ## Reflections
 
 For the most part, our UI and UX are good. Some things could be improved, but functionally, they serve well. These were the highest rated elements of out website. Nobody reported struggles in figuring out how to use the website. 
