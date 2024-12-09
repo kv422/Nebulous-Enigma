@@ -2,6 +2,7 @@ import React from 'react'
 import { useContext } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import UserContext from '../../context/UserContext'
+import Music from '../../Music.jsx'
 
 function Navbar() {
     const { setUserData } = useContext(UserContext)
@@ -23,9 +24,11 @@ function Navbar() {
     return (
       <div className='navbar'>
         <Link to='/home' className='navItem'> home </Link>
+        <Music></Music>
         { localStorage.getItem('auth-token') ? <Link to='/' onClickCapture={ handleLogOut } className='navItem'> log out </Link>
                                              : null }
       </div>
+      
     )
 }
 
