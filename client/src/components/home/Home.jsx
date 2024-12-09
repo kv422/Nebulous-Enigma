@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
+import Music from '../../Music.jsx'
 
 function Home() {
   const [name, setName] = useState(localStorage.getItem('name'))
@@ -12,7 +13,7 @@ function Home() {
     localStorage.setItem('savedID', 0)
 
     navigate(0)
-  }
+  }  
 
   return (
     <div className='homeBG'>
@@ -31,10 +32,12 @@ function Home() {
             <button onClickCapture={ handleLogOut } className='button-33'> log out </button>
           </div>
         </div>
+          <div>
+            <Music></Music>
+          </div>
       </div>
     </div>
   )
 }
-
 
 export default Home;
