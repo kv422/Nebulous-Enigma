@@ -275,3 +275,26 @@ html {
     transform: scale(1.05);
     color: rgba(44,187,99);
 }
+
+.music-button {
+  font-size: 20px;
+  display: block;
+  width: fit-content;
+  color: white;
+
+  text-decoration: none;
+  border: 0;
+  margin-left: 25px;
+  margin-right: 25px;
+  -webkit-text-stroke: 4px black;
+  paint-order: stroke fill;
+  font-family: "Aldrich", sans-serif;
+  background: none;
+}
+
+.music-button:hover {
+  color: rgba(44,187,99);
+  transition: all 250ms;
+  transform: scale(1.05);
+}
+
